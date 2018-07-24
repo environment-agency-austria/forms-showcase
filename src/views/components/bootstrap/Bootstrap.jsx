@@ -1,8 +1,14 @@
 import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+
+import InputPage from './InputPage';
 
 function Bootstrap() {
   return (
-    <h1>Bootstrap</h1>
+    <Switch>
+      <Route path="/components/core/input/" component={InputPage} />
+      <Route path="*" component={InputPage} />
+    </Switch>
   );
 }
 

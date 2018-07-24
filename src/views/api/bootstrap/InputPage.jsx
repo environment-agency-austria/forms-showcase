@@ -21,6 +21,14 @@ function FieldPage() {
         want to use any i18n features you can pass a raw message instead.
       </PropInfo>
 
+      <PropInfo name="prefix" type="String or Function">
+        Displays a prefix in front of the input. Supports custom components as well.
+      </PropInfo>
+
+      <PropInfo name="suffix" type="String or Function">
+        Displays a suffix after the input. Supports custom components as well.
+      </PropInfo>
+
       <PropInfo name="type" type="String" defaultValue="text">
         HTML5 input type of the input element.
       </PropInfo>
