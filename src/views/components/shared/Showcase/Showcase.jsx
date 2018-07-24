@@ -1,18 +1,14 @@
 import React from 'react';
 import PrismCode from 'react-prism';
+import { Button } from 'reactstrap';
 
 class Showcase extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      messageLog: [],
-    };
-
-    this.logMessage = this.logMessage.bind(this);
+  state = {
+    messageLog: [],
+    showCode: false,
   }
 
-  logMessage(msg) {
+  logMessage = (msg) => {
     this.setState(prevState => {
       const { messageLog } = prevState;
 
@@ -37,7 +33,7 @@ class Showcase extends React.Component {
       code,
     } = this.props;
 
-    const { messageLog } = this.state;
+    const { messageLog, showCode } = this.state;
 
     return (
       <div className="showcase">
@@ -46,12 +42,29 @@ class Showcase extends React.Component {
         <div className="display">
           <Component logMessage={this.logMessage} />
         </div>
-        <div className="message-log">
-          <h6>Message log</h6>
-          <pre>{messageLog.join('\n')}</pre>
+        {messageLog.length > 0 &&
+          <div className="message-log">
+            <h6>Message log</h6>
+            <pre>{messageLog.join('\n')}</pre>
+          </div>
+        }
+        <div className="source">
+          {showCode ? (
+            <React.Fragment>
+              <h6><Button color="link" onClick={() => this.setState({ showCode: false })}>Hide sourcecode</Button></h6>
+              <PrismCode className="lang-jsx" component="pre">{code}</PrismCode>
+            </React.Fragment>
+          ) :
+            <h6 className="mb-0">
+              <Button
+                color="link"
+                onClick={() => this.setState({ showCode: true })}
+              >
+                Show sourcecode
+              </Button>
+            </h6>
+          }
         </div>
-        <h6>Sourcecode</h6>
-        <PrismCode className="lang-jsx" component="pre">{code}</PrismCode>
       </div>
     );
   }

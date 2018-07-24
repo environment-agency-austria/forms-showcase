@@ -67,8 +67,13 @@ body {
   background-color: #E9ECEF;
 }
 
-.showcase .message-log h6 {
+.showcase .message-log h6,
+.showcase .source h6 {
   margin-top: 1rem;
+}
+
+.showcase .source h6 .btn-link {
+  padding: 0;
 }
 
 .demo button[type=submit] {
