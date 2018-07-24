@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Collapse } from 'reactstrap';
-import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
+import { HashRouter, Switch, Route, Link } from 'react-router-dom';
 
 import 'babel-polyfill';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -28,7 +28,7 @@ class App extends Component {
 
   render() {
     return (
-      <BrowserRouter
+      <HashRouter
         basename="forms-showcase"
         onUpdate={() => { window.scrollTo(0, 0) }}
       >
@@ -59,7 +59,7 @@ class App extends Component {
               </Switch>
           </div>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }
