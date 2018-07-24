@@ -28,10 +28,7 @@ class App extends Component {
 
   render() {
     return (
-      <HashRouter
-        basename="forms-showcase"
-        onUpdate={() => { window.scrollTo(0, 0) }}
-      >
+      <HashRouter onUpdate={() => { window.scrollTo(0, 0) }}>
         <div className="App">
           <Navbar dark color="dark" expand="md" fixed="top">
             <NavbarBrand tag={Link} to="/">Ocean Forms</NavbarBrand>
