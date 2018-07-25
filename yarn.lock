@@ -5785,30 +5785,30 @@ react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
 
-react-ocean-forms-bootstrap@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/react-ocean-forms-bootstrap/-/react-ocean-forms-bootstrap-1.1.0.tgz#0411ccac133bddb84bcdaaaf3169d4fdaca32e78"
+react-ocean-forms-bootstrap@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/react-ocean-forms-bootstrap/-/react-ocean-forms-bootstrap-1.2.0.tgz#f6aafefbed19c82c1900f96e0c0605cd2c437fde"
   dependencies:
     "@fortawesome/fontawesome" "^1.1.8"
     "@fortawesome/fontawesome-free-solid" "^5.0.13"
     "@fortawesome/react-fontawesome" "^0.0.20"
     prop-types "^15.6.1"
     react-datetime "^2.14.0"
-    react-ocean-forms "^1.1.0"
+    react-ocean-forms "^1.2.0"
     react-select "^1.2.1"
-    reactstrap "^6.1.0"
+    reactstrap "^6.1.0 || ^6.2.0 || ^6.3.0"
 
-react-ocean-forms-react-intl@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/react-ocean-forms-react-intl/-/react-ocean-forms-react-intl-1.0.3.tgz#9ac376431dfd5934fb16a77137bc8de0e8222fbf"
+react-ocean-forms-react-intl@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/react-ocean-forms-react-intl/-/react-ocean-forms-react-intl-1.1.0.tgz#3278bbd3652e271b8bcec1ad9f8fc371eced90af"
   dependencies:
     prop-types "^15.6.1"
     react-intl "^2.4.0"
-    react-ocean-forms "^1.0.3 || ^1.1.0"
+    react-ocean-forms "^1.0.3 || ^1.1.0 || ^1.2.0"
 
-"react-ocean-forms@^1.0.3 || ^1.1.0", react-ocean-forms@^1.1.0, react-ocean-forms@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/react-ocean-forms/-/react-ocean-forms-1.1.1.tgz#d5164a2cc76ea7d75abd5fc888b050f3d0c3d0e1"
+"react-ocean-forms@^1.0.3 || ^1.1.0 || ^1.2.0", react-ocean-forms@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/react-ocean-forms/-/react-ocean-forms-1.2.0.tgz#02bff901a3d48fed9fb86e9b65779ccfe01769ec"
   dependencies:
     prop-types "^15.6.1"
 
@@ -5921,7 +5921,7 @@ react@^16.4.1:
     object-assign "^4.1.1"
     prop-types "^15.6.0"
 
-reactstrap@^6.1.0, reactstrap@^6.3.0:
+"reactstrap@^6.1.0 || ^6.2.0 || ^6.3.0", reactstrap@^6.3.0:
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/reactstrap/-/reactstrap-6.3.0.tgz#99c790f7293dc74e01b5907d62db675b63866e9c"
   dependencies:

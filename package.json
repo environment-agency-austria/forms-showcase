@@ -9,9 +9,9 @@
     "prismjs": "^1.15.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-ocean-forms": "^1.1.1",
-    "react-ocean-forms-bootstrap": "^1.1.0",
-    "react-ocean-forms-react-intl": "^1.0.3",
+    "react-ocean-forms": "^1.2.0",
+    "react-ocean-forms-bootstrap": "^1.2.0",
+    "react-ocean-forms-react-intl": "^1.1.0",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4",
     "reactstrap": "^6.3.0"
