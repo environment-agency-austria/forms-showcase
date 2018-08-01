@@ -20,6 +20,7 @@ function FieldPage() {
       Those can be attached to either a Form or a FormGroup and will get triggered automatically."
       codeExample={introExample}
       parent="core"
+      hideComponentLink
     >
       <h2>Default validators</h2>
       <p>
