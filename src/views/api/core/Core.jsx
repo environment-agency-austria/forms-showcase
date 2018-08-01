@@ -6,6 +6,7 @@ import FieldPage from './FieldPage';
 import FieldGroupPage from './FieldGroupPage';
 import ValidationSummaryPage from './ValidationSummaryPage';
 import InputPage from './InputPage';
+import FormButtonPage from './FormButtonPage';
 import ValidatorsPage from './ValidatorsPage';
 
 function Core() {
@@ -16,6 +17,7 @@ function Core() {
       <Route path="/api/core/field-group/" component={FieldGroupPage} />
       <Route path="/api/core/validation-summary/" component={ValidationSummaryPage} />
       <Route path="/api/core/input/" component={InputPage} />
+      <Route path="/api/core/form-button/" component={FormButtonPage} />
       <Route path="/api/core/validators/" component={ValidatorsPage} />
       <Route path="*" component={FormPage} />
     </Switch>

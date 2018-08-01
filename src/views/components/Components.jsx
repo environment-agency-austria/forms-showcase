@@ -24,6 +24,7 @@ function Components() {
           <NavLink tag={Link} to="/components/core/field-group/">FieldGroup</NavLink>
           <NavLink tag={Link} to="/components/core/validation-summary/">ValidationSummary</NavLink>
           <NavLink tag={Link} to="/components/core/input/">Input</NavLink>
+          <NavLink tag={Link} to="/components/core/form-button/">FormButton</NavLink>
         </Nav>
 
         <Nav vertical>

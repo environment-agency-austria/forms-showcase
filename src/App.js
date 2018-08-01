@@ -3,9 +3,11 @@ import { Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Collapse } f
 import { HashRouter, Switch, Route, Link } from 'react-router-dom';
 
 import 'babel-polyfill';
+
 import 'bootstrap/dist/css/bootstrap.css';
 import 'react-select/dist/react-select.css';
 import 'react-datetime/css/react-datetime.css';
+
 import Prism from "prismjs"; // eslint-disable-line
 
 import Home from './views/home';
