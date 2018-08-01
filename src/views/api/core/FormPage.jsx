@@ -69,12 +69,22 @@ function FormPage() {
       <h2>Events</h2>
       <PropInfo name="onSubmit" type="Function">
         <p>Triggered when the form has been validated successfully and is ready to be submitted.</p>
+        <p>
+          If the passed function is an async function / returns a promise, then the form context
+          will stay in a busy state until the function resolves.
+        </p>
         <h6>Arguments</h6>
         <dl className="row">
           <dt className="col-sm-3">values <span className="text-info font-weight-normal font-italic">(Object)</span></dt>
           <dd className="col-sm-9">
             Contains the form values. The name of the fields are used as property names for the values object.
             <mark>FieldGroups</mark> result in a nested object.
+          </dd>
+
+          <dt className="col-sm-3">submitArgs <span className="text-info font-weight-normal font-italic">(any)</span></dt>
+          <dd className="col-sm-9">
+            By default undefined. Can be set by <mark>FormButton</mark> or any other manual way of calling the
+            submit method of the form context.
           </dd>
         </dl>
       </PropInfo>
