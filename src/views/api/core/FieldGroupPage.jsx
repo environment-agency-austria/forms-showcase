@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import ApiPage from '../shared/ApiPage';
 import PropInfo from '../shared/PropInfo';
@@ -45,10 +46,10 @@ function FieldPage() {
         </p>
         <p>
           In case of a validator attached to a group, the validator will receive an object as the value parameter. This object
-          will contain the values of the <mark>Fields</mark> inside the group.
+          will contain the values of the <Link to="../field">Fields</Link> inside the group.
         </p>
         <p>
-          react-ocean-forms ships with some sample validators. See <mark>Validators</mark> for further information.
+          react-ocean-forms ships with some sample validators. See <Link to="../validators">Validators</Link> for further information.
         </p>
       </PropInfo>
 
@@ -63,7 +64,7 @@ function FieldPage() {
         </p>
         <p>
           In case of a validator attached to a group, the validator will receive an object as the value parameter. This object
-          will contain the values of the <mark>Fields</mark> inside the group.
+          will contain the values of the <Link to="../field">Fields</Link> inside the group.
         </p>
       </PropInfo>
 

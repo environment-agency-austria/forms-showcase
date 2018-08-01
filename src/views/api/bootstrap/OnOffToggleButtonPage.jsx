@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import ApiPage from '../shared/ApiPage';
 import PropInfo from '../shared/PropInfo';
@@ -19,7 +20,7 @@ function FieldPage() {
         If you don't want to use any i18n features you can pass a raw message instead.
       </PropInfo>
 
-      <PropInfo name="offLabel" type="String" defaultValue="ojs_togglebutton_on (On)">
+      <PropInfo name="offLabel" type="String" defaultValue="ojs_togglebutton_on (Off)">
         Message id of the info text that will be displayed for the "off" button.
         If you don't want to use any i18n features you can pass a raw message instead.
       </PropInfo>
@@ -38,7 +39,7 @@ function FieldPage() {
       </PropInfo>
 
       <h2>Events</h2>
-      <p>See <mark>Field</mark> for event handling.</p>
+      <p>See <Link to="../../core/field">Field</Link> for event handling.</p>
     </ApiPage>
   );
 }

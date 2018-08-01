@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import ApiPage from '../shared/ApiPage';
 import PropInfo from '../shared/PropInfo';
@@ -41,7 +42,7 @@ function FieldPage() {
           function must return either undefined or a string containing the message id of the validation error text.
         </p>
         <p>
-          react-ocean-forms ships with some sample validators. See <mark>Validators</mark> for further information.
+          react-ocean-forms ships with some sample validators. See <Link to="../validators">Validators</Link> for further information.
         </p>
       </PropInfo>
 
@@ -104,7 +105,7 @@ function FieldPage() {
           <dt className="col-sm-3">meta <span className="text-info font-weight-normal font-italic">(Object)</span></dt>
           <dd className="col-sm-9">
             Contains the properties <mark>disabled</mark> and <mark>plaintext</mark>, representing
-            the current <mark>Form</mark> setup.
+            the current <Link to="../form">Form</Link> setup.
           </dd>
         </dl>
 
@@ -123,7 +124,7 @@ function FieldPage() {
           <dt className="col-sm-3">meta <span className="text-info font-weight-normal font-italic">(Object)</span></dt>
           <dd className="col-sm-9">
             Contains the properties <mark>disabled</mark> and <mark>plaintext</mark>, representing
-            the current <mark>Form</mark> setup.
+            the current <Link to="../form">Form</Link> setup.
           </dd>
         </dl>
 
@@ -132,7 +133,7 @@ function FieldPage() {
       </PropInfo>
 
       <h2>Writing your own Input Component</h2>
-      <p>Please refer to the <mark>Input</mark> API documentation for further information.</p>
+      <p>Please refer to the <Link to="../input">Input</Link> API documentation for further information.</p>
     </ApiPage>
   );
 }

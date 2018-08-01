@@ -1,5 +1,6 @@
 import React from 'react';
 import PrismCode from 'react-prism';
+import { Link } from 'react-router-dom';
 
 import ApiPage from '../shared/ApiPage';
 import PropInfo from '../shared/PropInfo';
@@ -25,7 +26,7 @@ function FieldPage() {
       <h2>Default validators</h2>
       <p>
         <mark>react-ocean-forms</mark> ships with the following validators. Those
-        only support <mark>Fields</mark>, if you need <mark>FieldGroup</mark> validators,
+        only support <Link to="../field">Fields</Link>, if you need <Link to="../field-group">FieldGroup</Link> validators,
         you have to implement your own validator.
       </p>
 
@@ -48,13 +49,14 @@ function FieldPage() {
       <h2>Validation behaviour</h2>
       <p>
         Validators can be triggered by three events: <mark>change</mark> or <mark>blur</mark> of
-        a Field, or <mark>submit</mark> of the Form. The validation will be performed as following:
+        a <Link to="../field">Field</Link>, or <mark>submit</mark> of the <Link to="../form">Form</Link>.
+        The validation will be performed as following:
       </p>
 
       <PropInfo name="Field.onChange">
         <ol>
           <li>
-            Invoke the <mark>synchronous validators</mark> of a <mark>Field</mark>. The validators will
+            Invoke the <mark>synchronous validators</mark> of a <Link to="../field">Field</Link>. The validators will
             be called one by one, regarding of their position in the validators Array. If a validator
             returns an error, the subsequential validators will <strong>not</strong> be called.
           </li>
@@ -67,7 +69,7 @@ function FieldPage() {
             <p>
               If the value didn't change and the synchronous validators are all valid, then the
               <mark>asynchronous validators</mark> will be called. All the validators are called at the same time
-              and the <mark>Field</mark> will wait for the result of each of them.
+              and the <Link to="../field">Field</Link> will wait for the result of each of them.
             </p>
           </li>
           <li>
@@ -84,13 +86,13 @@ function FieldPage() {
             Otherwise:
           </li>
           <li>
-            Invoke the <mark>synchronous validators</mark> of a <mark>Field</mark>. The validators will
+            Invoke the <mark>synchronous validators</mark> of a <Link to="../field">Field</Link>. The validators will
             be called one by one, regarding of their position in the validators Array. If a validator
             returns an error, the subsequential validators will <strong>not</strong> be called.
           </li>
           <li>
             The <mark>asynchronous validators</mark> will be called. All the validators are called at the same time
-            and the <mark>Field</mark> will wait for the result of each of them.
+            and the <Link to="../field">Field</Link> will wait for the result of each of them.
           </li>
           <li>
             If any of the validators return an error, the field is marked as invalid.
@@ -115,9 +117,9 @@ function FieldPage() {
       </PropInfo>
 
       <PropInfo name="FieldGroups">
-        <mark>FieldGroups</mark> behave in the same way as <mark>Fields</mark>. The Fields of the Group will pass their onChange and
-        onBlur events to the parent group, thus triggering the group-wide validation. The FieldGroup will validate no matter what
-        the validation results of the Fields are.
+        <Link to="../field-group">FieldGroups</Link> behave in the same way as <Link to="../field">Fields</Link>.
+        The Fields of the Group will pass their onChange and onBlur events to the parent group, thus triggering
+        the group-wide validation. The FieldGroup will validate no matter what the validation results of the Fields are.
       </PropInfo>
 
       <h2>Validators with parameters</h2>
@@ -144,7 +146,7 @@ function FieldPage() {
           </dd>
           <dt className="col-sm-3">context <span className="text-info font-weight-normal font-italic">(Object)</span></dt>
           <dd className="col-sm-9">
-            Contains the current form context that can be used for advanced validation. See <mark>Form</mark> for
+            Contains the current form context that can be used for advanced validation. See <Link to="../form">Form</Link> for
             further information about the form context.
           </dd>
         </dl>

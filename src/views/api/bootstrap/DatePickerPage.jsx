@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import ApiPage from '../shared/ApiPage';
 import PropInfo from '../shared/PropInfo';
@@ -36,7 +37,7 @@ function DatePickerPage() {
       </PropInfo>
 
       <h2>Events</h2>
-      <p>See <mark>Field</mark> for event handling.</p>
+      <p>See <Link to="../../core/field">Field</Link> for event handling.</p>
     </ApiPage>
   );
 }

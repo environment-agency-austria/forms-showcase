@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import ApiPage from '../shared/ApiPage';
 import PropInfo from '../shared/PropInfo';
@@ -16,13 +17,13 @@ function FormPage() {
     >
       <h2>Properties</h2>
       <PropInfo name="asyncValidationOnChange" type="Boolean" defaultValue="false">
-        If set to true the form will trigger asynchronous validation on Fields whenever they
+        If set to true the form will trigger asynchronous validation on <Link to="../field">Fields</Link> whenever they
         change (e.g. on key press). Default behaviour is that the fields will only async validate
         when they loose focus. Can be overriden per field.
       </PropInfo>
 
       <PropInfo name="asyncValidationWait" type="Number" defaultValue="400">
-        Configures the wait time before the async validators will be called. Per default the form
+        Configures the wait time before the async <Link to="../validators">validators</Link> will be called. Per default the form
         will call the async validators only 400ms after the last value change. Can be overriden per field.
       </PropInfo>
 
@@ -37,7 +38,7 @@ function FormPage() {
       </PropInfo>
 
       <PropInfo name="disabled" type="Boolean" defaultValue="false">
-        If set to true the form will disable all fields and buttons.
+        If set to true the form will disable all <Link to="../field">Fields</Link> and <Link to="../form-button">FormButtons</Link>.
       </PropInfo>
 
       <PropInfo name="plaintext" type="Boolean" defaultValue="false">
@@ -77,13 +78,13 @@ function FormPage() {
         <dl className="row">
           <dt className="col-sm-3">values <span className="text-info font-weight-normal font-italic">(Object)</span></dt>
           <dd className="col-sm-9">
-            Contains the form values. The name of the fields are used as property names for the values object.
-            <mark>FieldGroups</mark> result in a nested object.
+            Contains the form values. The name of the fields are used as property names for the values
+            object. <Link to="../field-group">FieldGroups</Link> result in a nested object.
           </dd>
 
           <dt className="col-sm-3">submitArgs <span className="text-info font-weight-normal font-italic">(any)</span></dt>
           <dd className="col-sm-9">
-            By default undefined. Can be set by <mark>FormButton</mark> or any other manual way of calling the
+            By default undefined. Can be set by <Link to="../form-button">FormButton</Link> or any other manual way of calling the
             submit method of the form context.
           </dd>
         </dl>
@@ -99,8 +100,8 @@ function FormPage() {
         <dl className="row">
           <dt className="col-sm-3">values <span className="text-info font-weight-normal font-italic">(Object)</span></dt>
           <dd className="col-sm-9">
-            Contains the form values. The name of the fields are used as property names for the values object.
-            <mark>FieldGroups</mark> result in a nested object.
+            Contains the form values. The name of the fields are used as property names for the values
+            object. <Link to="../field-group">FieldGroups</Link> result in a nested object.
           </dd>
         </dl>
 

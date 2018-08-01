@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import ApiPage from '../shared/ApiPage';
 
@@ -15,9 +16,10 @@ function FieldPage() {
     >
       <h2>Properties</h2>
       <p>
-        This component is just a wrapper for reactstrap's buttons. It will pass all props
-        to the underlying button. Please refer to the <a href="http://reactstrap.github.io/components/buttons/">reactstrap documentation</a> for
-        the available props.
+        This component is just a wrapper for reactstrap buttons as a custom element inside
+        the <Link to="../../core/form-button">Core Form-Button</Link>. It will pass all props
+        to the underlying button. Please refer to the <a href="http://reactstrap.github.io/components/buttons/">reactstrap documentation</a> and
+        the Form-Button documentation for the available props.
       </p>
     </ApiPage>
   );

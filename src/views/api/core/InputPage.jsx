@@ -1,5 +1,6 @@
 import React from 'react';
 import PrismCode from 'react-prism';
+import { Link } from 'react-router-dom';
 
 import ApiPage from '../shared/ApiPage';
 import PropInfo from '../shared/PropInfo';
@@ -24,12 +25,12 @@ function FieldPage() {
       </PropInfo>
 
       <h2>Events</h2>
-      <p>See <mark>Field</mark> for event handling.</p>
+      <p>See <Link to="../field">Fields</Link> for event handling.</p>
 
       <h2>Writing your own Input Component</h2>
       <p>
         An Input Component is just a regular React Component that gets provided with special
-        props by the <mark>Field</mark>. This makes it quite easy to write your own components,
+        props by the <Link to="../field">Field</Link>. This makes it quite easy to write your own components,
         as most of the Form logic will be handled by the Field wrapper.
       </p>
       <p>
@@ -52,7 +53,7 @@ function FieldPage() {
           </dd>
           <dt className="col-sm-3">value <span className="text-info font-weight-normal font-italic">(any)</span></dt>
           <dd className="col-sm-9">
-            Current field value. Important: the <mark>Field</mark> will manage the value for you.
+            Current field value. Important: the <Link to="../field">Field</Link> will manage the value for you.
           </dd>
           <dt className="col-sm-3">disabled <span className="text-info font-weight-normal font-italic">(Boolean)</span></dt>
           <dd className="col-sm-9">
@@ -92,7 +93,7 @@ function FieldPage() {
           </dd>
           <dt className="col-sm-3">plaintext <span className="text-info font-weight-normal font-italic">(Boolean)</span></dt>
           <dd className="col-sm-9">
-            True if the <mark>Form</mark> is in plaintext mode. The input should be rendered in a way that
+            True if the <Link to="../form">Form</Link> is in plaintext mode. The input should be rendered in a way that
             is read-only (e.g. for a reusable check page with all the user input).
           </dd>
           <dt className="col-sm-3">stringFormatter <span className="text-info font-weight-normal font-italic">(Function)</span></dt>
@@ -104,7 +105,7 @@ function FieldPage() {
       </PropInfo>
 
       <PropInfo name="label" type="String">
-        The label prop of the <mark>Field</mark>.
+        The label prop of the <Link to="../field">Field</Link>.
       </PropInfo>
 
       <h5>Example custom input</h5>

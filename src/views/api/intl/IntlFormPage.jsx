@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import ApiPage from '../shared/ApiPage';
 
@@ -14,10 +15,10 @@ function FieldPage() {
       parent="intl"
     >
       <h2>Properties</h2>
-      <p>See <mark>Form</mark> for properties.</p>
+      <p>See <Link to="../../core/form">Form</Link> for properties.</p>
 
       <h2>Events</h2>
-      <p>See <mark>Form</mark> for event handling.</p>
+      <p>See <Link to="../../core/form">Form</Link> for event handling.</p>
     </ApiPage>
   );
 }
