@@ -35,6 +35,7 @@ function Components() {
           <NavLink tag={Link} to="/components/bootstrap/date-picker/">DatePicker</NavLink>
           <NavLink tag={Link} to="/components/bootstrap/validation-summary/">ValidationSummary</NavLink>
           <NavLink tag={Link} to="/components/bootstrap/form-button/">FormButton</NavLink>
+          <NavLink tag={Link} to="/components/bootstrap/on-off-toggle-button/">OnOffToggleButton</NavLink>
         </Nav>
 
         <Nav vertical>

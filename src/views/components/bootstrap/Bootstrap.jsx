@@ -9,6 +9,7 @@ import CheckPage from './CheckPage';
 import DatePickerPage from './DatePickerPage';
 import ValidationSummaryPage from './ValidationSummaryPage';
 import FormButtonPage from './FormButtonPage';
+import OnOffToggleButtonPage from './OnOffToggleButtonPage';
 
 function Bootstrap() {
   return (
@@ -19,6 +20,7 @@ function Bootstrap() {
       <Route path="/components/bootstrap/date-picker/" component={DatePickerPage} />
       <Route path="/components/bootstrap/validation-summary/" component={ValidationSummaryPage} />
       <Route path="/components/bootstrap/form-button/" component={FormButtonPage} />
+      <Route path="/components/bootstrap/on-off-toggle-button/" component={OnOffToggleButtonPage} />
       <Route path="*" component={InputPage} />
     </Switch>
   );

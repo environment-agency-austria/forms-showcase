@@ -37,6 +37,7 @@ function Api() {
           <NavLink tag={Link} to="/api/bootstrap/date-picker/">DatePicker</NavLink>
           <NavLink tag={Link} to="/api/bootstrap/validation-summary/">ValidationSummary</NavLink>
           <NavLink tag={Link} to="/api/bootstrap/form-button/">FormButton</NavLink>
+          <NavLink tag={Link} to="/api/bootstrap/on-off-toggle-button/">OnOffToggleButton</NavLink>
         </Nav>
 
         <Nav vertical>
