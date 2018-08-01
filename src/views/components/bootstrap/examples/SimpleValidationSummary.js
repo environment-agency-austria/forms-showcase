@@ -5,7 +5,7 @@ import { Input, ValidationSummary } from 'react-ocean-forms-bootstrap';
 function Example() {
   return (
     <Form className="demo">
-      <ValidationSummary />
+      <ValidationSummary id="demoSummary" />
 
       <Field
         name="requiredInput"
