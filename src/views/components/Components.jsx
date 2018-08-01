@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col, Nav, NavItem, NavLink } from 'reactstrap';
-import { Switch, Route, Link } from 'react-router-dom';
+import { Switch, Route, Link, Redirect } from 'react-router-dom';
 
 import CoreComponents from './core';
 import BootstrapComponents from './bootstrap';
@@ -15,6 +15,7 @@ function Components() {
           <Route path="/components/core" component={CoreComponents} />
           <Route path="/components/bootstrap" component={BootstrapComponents} />
           <Route path="/components/intl" component={IntlComponents} />
+          <Redirect from="/components" to="/components/core/form" exact />
           <Route path="*" component={NotFound} />
         </Switch>
       </Col>

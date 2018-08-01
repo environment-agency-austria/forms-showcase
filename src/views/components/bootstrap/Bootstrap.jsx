@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 
 import 'react-ocean-forms-bootstrap/build/main.css';
 
@@ -22,6 +22,7 @@ function Bootstrap() {
       <Route path="/components/bootstrap/validation-summary/" component={ValidationSummaryPage} />
       <Route path="/components/bootstrap/form-button/" component={FormButtonPage} />
       <Route path="/components/bootstrap/on-off-toggle-button/" component={OnOffToggleButtonPage} />
+      <Redirect from="/components/bootstrap" to="/components/bootstrap/input" exact />
       <Route path="*" component={NotFound} />
     </Switch>
   );

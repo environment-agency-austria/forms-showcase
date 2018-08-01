@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col, Nav, NavItem, NavLink } from 'reactstrap';
-import { Switch, Route, Link } from 'react-router-dom';
+import { Switch, Route, Link, Redirect } from 'react-router-dom';
 
 import CoreComponents from './core';
 import BootstrapComponents from './bootstrap';
@@ -15,6 +15,7 @@ function Api() {
           <Route path="/api/core" component={CoreComponents} />
           <Route path="/api/bootstrap" component={BootstrapComponents} />
           <Route path="/api/intl" component={IntlComponents} />
+          <Redirect from="/api" to="/api/core/form" exact />
           <Route path="*" component={NotFound} />
         </Switch>
       </Col>

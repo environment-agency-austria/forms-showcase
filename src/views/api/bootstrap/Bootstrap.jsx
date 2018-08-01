@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 
 import InputPage from './InputPage';
 import SelectPage from './SelectPage';
@@ -20,6 +20,7 @@ function Bootstrap() {
       <Route path="/api/bootstrap/validation-summary/" component={ValidationSummaryPage} />
       <Route path="/api/bootstrap/form-button/" component={FormButtonPage} />
       <Route path="/api/bootstrap/on-off-toggle-button/" component={OnOffToggleButtonPage} />
+      <Redirect from="/api/bootstrap" to="/api/bootstrap/input" exact />
       <Route path="*" component={NotFound} />
     </Switch>
   );

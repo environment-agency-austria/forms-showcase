@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 
 import FormPage from './FormPage';
 import FieldPage from './FieldPage';
@@ -18,6 +18,7 @@ function Core() {
       <Route path="/components/core/validation-summary/" component={ValidationSummaryPage} />
       <Route path="/components/core/input/" component={InputPage} />
       <Route path="/components/core/form-button/" component={FormButtonPage} />
+      <Redirect from="/components/core" to="/components/core/form" exact />
       <Route path="*" component={NotFound} />
     </Switch>
   );
