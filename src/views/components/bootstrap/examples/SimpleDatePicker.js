@@ -32,9 +32,6 @@ function Example({ logMessage }) {
         component={DatePicker}
         timeFormat="HH:mm"
       />
-
-      <button type="submit">Submit</button>
-      <button type="reset">Reset</button>
     </Form>
   );
 }

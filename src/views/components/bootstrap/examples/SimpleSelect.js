@@ -38,9 +38,6 @@ function Example({ logMessage }) {
         validators={[validators.required]}
         options={options}
       />
-
-      <button type="submit">Submit</button>
-      <button type="reset">Reset</button>
     </Form>
   );
 }

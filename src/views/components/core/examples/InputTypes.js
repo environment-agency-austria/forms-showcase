@@ -31,9 +31,6 @@ function Example({ logMessage }) {
         component={Input}
         type="date"
       />
-
-      <button type="submit">Submit</button>
-      <button type="reset">Reset</button>
     </Form>
   );
 }

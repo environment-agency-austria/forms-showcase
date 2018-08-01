@@ -21,9 +21,6 @@ function Example({ logMessage }) {
         onBlur={handleBlur}
         component={Input}
       />
-
-      <button type="submit">Submit</button>
-      <button type="reset">Reset</button>
     </Form>
   );
 }

@@ -40,9 +40,6 @@ function Example({ logMessage }) {
         component={Input}
         info="Custom info text!"
       />
-
-      <button type="submit">Submit</button>
-      <button type="reset">Reset</button>
     </Form>
   );
 }
