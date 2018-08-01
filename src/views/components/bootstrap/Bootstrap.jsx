@@ -1,6 +1,8 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
+import 'react-ocean-forms-bootstrap/build/main.css';
+
 import InputPage from './InputPage';
 import SelectPage from './SelectPage';
 import CheckPage from './CheckPage';
