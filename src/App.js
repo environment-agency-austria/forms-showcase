@@ -13,6 +13,7 @@ import Prism from "prismjs"; // eslint-disable-line
 import Home from './views/home';
 import Components from './views/components';
 import Api from './views/api';
+import NotFound from './views/not-found';
 
 class App extends Component {
   constructor(props) {
@@ -57,6 +58,7 @@ class App extends Component {
                 <Route path="/" exact component={Home} />
                 <Route path="/components" component={Components} />
                 <Route path="/api" component={Api} />
+                <Route path="*" component={NotFound} />
               </Switch>
           </div>
         </div>

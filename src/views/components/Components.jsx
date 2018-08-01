@@ -5,6 +5,7 @@ import { Switch, Route, Link } from 'react-router-dom';
 import CoreComponents from './core';
 import BootstrapComponents from './bootstrap';
 import IntlComponents from './intl';
+import NotFound from '../not-found';
 
 function Components() {
   return (
@@ -14,6 +15,7 @@ function Components() {
           <Route path="/components/core" component={CoreComponents} />
           <Route path="/components/bootstrap" component={BootstrapComponents} />
           <Route path="/components/intl" component={IntlComponents} />
+          <Route path="*" component={NotFound} />
         </Switch>
       </Col>
       <Col md="4">

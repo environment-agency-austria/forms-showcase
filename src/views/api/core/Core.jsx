@@ -8,6 +8,7 @@ import ValidationSummaryPage from './ValidationSummaryPage';
 import InputPage from './InputPage';
 import FormButtonPage from './FormButtonPage';
 import ValidatorsPage from './ValidatorsPage';
+import NotFound from '../../not-found';
 
 function Core() {
   return (
@@ -19,7 +20,7 @@ function Core() {
       <Route path="/api/core/input/" component={InputPage} />
       <Route path="/api/core/form-button/" component={FormButtonPage} />
       <Route path="/api/core/validators/" component={ValidatorsPage} />
-      <Route path="*" component={FormPage} />
+      <Route path="*" component={NotFound} />
     </Switch>
   );
 }

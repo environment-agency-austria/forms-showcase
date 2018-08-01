@@ -5,6 +5,7 @@ import { Switch, Route, Link } from 'react-router-dom';
 import CoreComponents from './core';
 import BootstrapComponents from './bootstrap';
 import IntlComponents from './intl';
+import NotFound from '../not-found';
 
 function Api() {
   return (
@@ -14,7 +15,7 @@ function Api() {
           <Route path="/api/core" component={CoreComponents} />
           <Route path="/api/bootstrap" component={BootstrapComponents} />
           <Route path="/api/intl" component={IntlComponents} />
-          <Route path="*" component={CoreComponents} />
+          <Route path="*" component={NotFound} />
         </Switch>
       </Col>
       <Col md="4">

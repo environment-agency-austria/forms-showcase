@@ -8,6 +8,7 @@ import DatePickerPage from './DatePickerPage';
 import ValidationSummaryPage from './ValidationSummaryPage';
 import FormButtonPage from './FormButtonPage';
 import OnOffToggleButtonPage from './OnOffToggleButtonPage';
+import NotFound from '../../not-found';
 
 function Bootstrap() {
   return (
@@ -19,7 +20,7 @@ function Bootstrap() {
       <Route path="/api/bootstrap/validation-summary/" component={ValidationSummaryPage} />
       <Route path="/api/bootstrap/form-button/" component={FormButtonPage} />
       <Route path="/api/bootstrap/on-off-toggle-button/" component={OnOffToggleButtonPage} />
-      <Route path="*" component={InputPage} />
+      <Route path="*" component={NotFound} />
     </Switch>
   );
 }
