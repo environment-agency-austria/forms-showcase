@@ -37,9 +37,9 @@ function ApiPage(props) {
   return (
     <div className="component-page" {...rest}>
       <Breadcrumb>
-        <BreadcrumbItem tag={Link} to="/api">API</BreadcrumbItem>
-        <BreadcrumbItem tag={Link} to={`/api/${parent}`}>{parentLabel}</BreadcrumbItem>
-        <BreadcrumbItem>{title}</BreadcrumbItem>
+        <BreadcrumbItem>API</BreadcrumbItem>
+        <BreadcrumbItem>{parentLabel}</BreadcrumbItem>
+        <BreadcrumbItem tag="strong">{title}</BreadcrumbItem>
       </Breadcrumb>
 
       <h1>

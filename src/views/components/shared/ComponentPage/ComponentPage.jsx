@@ -34,9 +34,9 @@ function ComponentPage(props) {
   return (
     <div className="component-page" {...rest}>
       <Breadcrumb>
-        <BreadcrumbItem tag={Link} to="/components">Components</BreadcrumbItem>
-        <BreadcrumbItem tag={Link} to={`/components/${parent}`}>{parentLabel}</BreadcrumbItem>
-        <BreadcrumbItem>{title}</BreadcrumbItem>
+        <BreadcrumbItem>Components</BreadcrumbItem>
+        <BreadcrumbItem>{parentLabel}</BreadcrumbItem>
+        <BreadcrumbItem tag="strong">{title}</BreadcrumbItem>
       </Breadcrumb>
 
       <h1>
