@@ -5785,30 +5785,30 @@ react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
 
-react-ocean-forms-bootstrap@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/react-ocean-forms-bootstrap/-/react-ocean-forms-bootstrap-1.2.0.tgz#f6aafefbed19c82c1900f96e0c0605cd2c437fde"
+react-ocean-forms-bootstrap@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/react-ocean-forms-bootstrap/-/react-ocean-forms-bootstrap-1.3.0.tgz#4fdc51aadd1b68cb8f12ae421f11e4ea6b56dbdb"
   dependencies:
     "@fortawesome/fontawesome" "^1.1.8"
     "@fortawesome/fontawesome-free-solid" "^5.0.13"
     "@fortawesome/react-fontawesome" "^0.0.20"
     prop-types "^15.6.1"
     react-datetime "^2.14.0"
-    react-ocean-forms "^1.2.0"
+    react-ocean-forms "^1.3.0"
     react-select "^1.2.1"
     reactstrap "^6.1.0 || ^6.2.0 || ^6.3.0"
 
-react-ocean-forms-react-intl@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/react-ocean-forms-react-intl/-/react-ocean-forms-react-intl-1.1.0.tgz#3278bbd3652e271b8bcec1ad9f8fc371eced90af"
+react-ocean-forms-react-intl@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/react-ocean-forms-react-intl/-/react-ocean-forms-react-intl-1.2.0.tgz#924e721bbff1dd4f7f59f7c9f203a5b756e80fab"
   dependencies:
     prop-types "^15.6.1"
     react-intl "^2.4.0"
-    react-ocean-forms "^1.0.3 || ^1.1.0 || ^1.2.0"
+    react-ocean-forms "^1.0.3 || ^1.1.0 || ^1.2.0 || ^1.3.0"
 
-"react-ocean-forms@^1.0.3 || ^1.1.0 || ^1.2.0", react-ocean-forms@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/react-ocean-forms/-/react-ocean-forms-1.2.0.tgz#02bff901a3d48fed9fb86e9b65779ccfe01769ec"
+"react-ocean-forms@^1.0.3 || ^1.1.0 || ^1.2.0 || ^1.3.0", react-ocean-forms@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/react-ocean-forms/-/react-ocean-forms-1.3.0.tgz#9acec4365bbf6e21e32ddaa861eb40ee22072879"
   dependencies:
     prop-types "^15.6.1"
 
