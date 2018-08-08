@@ -88,3 +88,7 @@ body {
 .demo .input-container input + span {
   margin-left: 1em;
 }
+
+.demo .form-group:last-of-type {
+  margin-bottom: 0;
+}
