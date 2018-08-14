@@ -2,9 +2,9 @@ import React from 'react';
 import { IntlProvider, FormattedMessage, addLocaleData } from 'react-intl';
 import deLocaleData from 'react-intl/locale-data/de';
 import IntlFrom from 'react-ocean-forms-react-intl';
-import { Field, validators } from 'react-ocean-forms';
-import { Input, FormButton } from 'react-ocean-forms-bootstrap';
 import { Button } from 'reactstrap';
+import { Field, validators, FormText } from 'react-ocean-forms';
+import { Input, FormButton } from 'react-ocean-forms-bootstrap';
 
 class Example extends React.Component {
   state = { locale: 'en' };
@@ -14,6 +14,7 @@ class Example extends React.Component {
       lblMail: 'E-Mail',
       submit: 'Submit',
       reset: 'Reset',
+      customText: 'My example text',
       ojs_field_required: 'This field is required!',
       ojs_error_required: 'This field is required!',
     },
@@ -22,6 +23,7 @@ class Example extends React.Component {
       lblMail: 'E-Mail',
       submit: 'Senden',
       reset: 'Zurücksetzen',
+      customText: 'Mein Beispieltext',
       ojs_field_required: 'Pflichtfeld!',
       ojs_error_required: 'Dieses Feld muss ausgefüllt werden!',
     },
@@ -61,6 +63,10 @@ class Example extends React.Component {
             label="lblMail"
             component={Input}
           />
+
+          <p>
+            <FormText text="customText" />
+          </p>
 
           <FormButton color="primary">
             <FormattedMessage id="submit" />

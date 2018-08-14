@@ -28,6 +28,7 @@ function Api() {
           <NavLink tag={Link} to="/api/core/validation-summary/">ValidationSummary</NavLink>
           <NavLink tag={Link} to="/api/core/input/">Input</NavLink>
           <NavLink tag={Link} to="/api/core/form-button/">FormButton</NavLink>
+          <NavLink tag={Link} to="/api/core/form-text/">FormText</NavLink>
           <NavLink tag={Link} to="/api/core/validators/">Validators</NavLink>
         </Nav>
 

@@ -7,6 +7,7 @@ import FieldGroupPage from './FieldGroupPage';
 import ValidationSummaryPage from './ValidationSummaryPage';
 import InputPage from './InputPage';
 import FormButtonPage from './FormButtonPage';
+import FormTextPage from './FormTextPage';
 import ValidatorsPage from './ValidatorsPage';
 import NotFound from '../../not-found';
 
@@ -19,6 +20,7 @@ function Core() {
       <Route path="/api/core/validation-summary/" component={ValidationSummaryPage} />
       <Route path="/api/core/input/" component={InputPage} />
       <Route path="/api/core/form-button/" component={FormButtonPage} />
+      <Route path="/api/core/form-text/" component={FormTextPage} />
       <Route path="/api/core/validators/" component={ValidatorsPage} />
       <Redirect from="/api/core" to="/api/core/form" exact />
       <Route path="*" component={NotFound} />
