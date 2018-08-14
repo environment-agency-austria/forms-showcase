@@ -1,10 +1,12 @@
 import React from 'react';
+import PrismCode from 'react-prism';
 import { Link } from 'react-router-dom';
 
 import ApiPage from '../shared/ApiPage';
 import PropInfo from '../shared/PropInfo';
 
 const introExample = require('!!raw-loader!./examples/Form.js'); // eslint-disable-line
+const valuesExample = require('!!raw-loader!./examples/ValuesExample.js'); // eslint-disable-line
 
 function FormPage() {
   return (
@@ -32,9 +34,19 @@ function FormPage() {
       </PropInfo>
 
       <PropInfo name="defaultValues" type="Object">
-        Contains the default values of the form. Those values will be put into the according fields
-        when the form initializes. The name prop of the field will be used to get the default value
-        from the according proprety of the defaultValues object.
+        <p>
+          Contains the default values of the form. Those values will be put into the according fields
+          when the form initializes. Example default values object:
+        </p>
+        <PrismCode className="lang-jsx" component="pre">{valuesExample}</PrismCode>
+      </PropInfo>
+
+      <PropInfo name="values" type="Object">
+        <p>
+          Contains the values of the form. Changing this property will update all Field values, overwriting
+          their default values but also any value the user put in. Example values object:
+        </p>
+        <PrismCode className="lang-jsx" component="pre">{valuesExample}</PrismCode>
       </PropInfo>
 
       <PropInfo name="disabled" type="Boolean" defaultValue="false">

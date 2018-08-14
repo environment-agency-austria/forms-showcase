@@ -5,11 +5,13 @@ import Showcase from '../shared/Showcase';
 
 import simpleFormDemo from './examples/SimpleForm';
 import defaultValuesDemo from './examples/DefaultValues';
+import valuesDemo from './examples/FormValues';
 import formValidationDemo from './examples/FormValidation';
 import disabledDemo from './examples/DisabledForm';
 import plaintextDemo from './examples/PlaintextForm';
 
 const defaultValues = require('!!raw-loader!./examples/DefaultValues.js'); // eslint-disable-line
+const values = require('!!raw-loader!./examples/FormValues.js'); // eslint-disable-line
 const simpleForm = require('!!raw-loader!./examples/SimpleForm.js'); // eslint-disable-line
 const formValidation = require('!!raw-loader!./examples/FormValidation.js'); // eslint-disable-line
 const disabled = require('!!raw-loader!./examples/DisabledForm.js'); // eslint-disable-line
@@ -32,9 +34,19 @@ function FormPage() {
 
       <Showcase
         title="Default values"
-        description="Provide the form with values that should be displayed on load."
+        description="Provide the form with default values that should be displayed on load.
+        Note how the default value won't update the Field, if the user changed the input.
+        However, on form reset the default value will be used again."
         component={defaultValuesDemo}
         code={defaultValues}
+      />
+
+      <Showcase
+        title="Values"
+        description="Override the values of the form fields. Changing those values will override
+        the Field value, even if the user changed it."
+        component={valuesDemo}
+        code={values}
       />
 
       <Showcase

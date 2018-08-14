@@ -78,6 +78,16 @@ function FieldPage() {
         only 400ms after the last value change.
       </PropInfo>
 
+      <PropInfo name="defaultValues" type="Object">
+        Overwrites the Form default values for the child fields of this field group. Those values will be put into the according
+        fields when the form initializes.
+      </PropInfo>
+
+      <PropInfo name="values" type="Object">
+        Overwrites the Form values for the child fields of this field group. Changing this property will update all Field values,
+        overwriting their default values but also any value the user put in.
+      </PropInfo>
+
       <h2>Events</h2>
       <p>The <mark>FieldGroup</mark> doesn't emit any events.</p>
     </ApiPage>

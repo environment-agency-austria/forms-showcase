@@ -65,6 +65,15 @@ function FieldPage() {
         only 400ms after the last value change.
       </PropInfo>
 
+      <PropInfo name="defaultValue" type="Object">
+        Overwrites the Form default values for this field. This value will be used during form initialization.
+      </PropInfo>
+
+      <PropInfo name="value" type="Object">
+        Overwrites the Form value for this field. Changing this property will update the Field value,
+        overwriting its default value but also any value the user put in.
+      </PropInfo>
+
       <PropInfo name="Specialized properties">
         <p>
           Depending on the input component that is used with the Field, the Field will accept a range of specialized properties

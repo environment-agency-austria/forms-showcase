@@ -3,8 +3,9 @@ import { Form, Field, Input } from 'react-ocean-forms';
 
 class Example extends React.Component {
   state = {
-    defaultValues: {
-      myInput: 'default value',
+    // Typically you'd load the values from your backend
+    values: {
+      myInput: 'demo value',
     },
   };
 
@@ -14,37 +15,33 @@ class Example extends React.Component {
     logMessage('onSubmit, values: ' + JSON.stringify(values));
   };
 
-  randomizeDefaultValues = () => {
+  randomizeValues = () => {
     this.setState({
-      defaultValues: {
-        myInput: `default ${(Math.floor(Math.random() * 100))}`,
+      values: {
+        myInput: `demo ${(Math.floor(Math.random() * 100))}`,
       },
     });
   }
 
   render() {
-    const { defaultValues } = this.state;
+    const { values } = this.state;
 
     return (
       <Form
         className="demo"
         onSubmit={this.handleSubmit}
-        defaultValues={defaultValues}
+        values={values}
       >
         <Field name="myInput" label="Example input" component={Input} />
-
-        <p className="mt-4">
-          Current default value: {defaultValues.myInput}
-        </p>
 
         <button type="submit">Submit</button>
         <button type="reset">Reset</button>
         <button
           type="button"
-          onClick={this.randomizeDefaultValues}
+          onClick={this.randomizeValues}
           className="ml-1"
         >
-          Update default values
+          Update values
         </button>
       </Form>
     );
