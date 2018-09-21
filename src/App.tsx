@@ -1,22 +1,26 @@
-import React, { Component } from 'react';
-import { Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Collapse } from 'reactstrap';
-import { HashRouter, Switch, Route, Link } from 'react-router-dom';
+import * as React from 'react';
+import { HashRouter, Link, Route, Switch } from 'react-router-dom';
+import { Collapse, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
 
 import 'babel-polyfill';
 
 import 'bootstrap/dist/css/bootstrap.css';
-import 'react-select/dist/react-select.css';
 import 'react-datetime/css/react-datetime.css';
 
-import Prism from "prismjs"; // eslint-disable-line
+// @ts-ignore
+import Prism from "prismjs";
 
-import Home from './views/home';
-import Components from './views/components';
 import Api from './views/api';
+import Components from './views/components';
+import Home from './views/home';
 import NotFound from './views/not-found';
 
-class App extends Component {
-  constructor(props) {
+interface IAppState {
+  isOpen: boolean;
+}
+
+class App extends React.Component<{}, IAppState> {
+  constructor(props: {}) {
     super(props);
 
     this.toggle = this.toggle.bind(this);
@@ -25,17 +29,18 @@ class App extends Component {
     };
   }
 
-  toggle() {
+  private toggle() {
     this.setState({
       isOpen: !this.state.isOpen
     });
   }
 
-  render() {
+  // tslint:disable-next-line:member-ordering
+  public render() {
     return (
-      <HashRouter onUpdate={() => { window.scrollTo(0, 0) }}>
+      <HashRouter>
         <div className="App">
-          <Navbar dark color="dark" expand="md" fixed="top">
+          <Navbar color="dark" expand="md" fixed="top">
             <NavbarBrand tag={Link} to="/">Ocean Forms</NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
