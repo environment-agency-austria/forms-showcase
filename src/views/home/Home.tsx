@@ -5,8 +5,7 @@ import PrismCode from 'react-prism';
 import { Link } from 'react-router-dom';
 import { Jumbotron } from 'reactstrap';
 
-// tslint:disable-next-line:no-var-requires
-const gettingStartedExample = require('!!raw-loader!./examples/GettingStarted.js');
+import GettingStartedJs from '!!raw-loader!./examples/GettingStarted.js';
 
 export const Home = (): JSX.Element => {
   return (
@@ -59,7 +58,7 @@ export const Home = (): JSX.Element => {
       <p>
         After adding the react-ocean-forms package(s) to your project, you can simply import the components you need.
       </p>
-      <PrismCode className="lang-jsx" component="pre">{gettingStartedExample}</PrismCode>
+      <PrismCode className="lang-jsx" component="pre">{GettingStartedJs}</PrismCode>
       <p>For further documentation head to the <Link to="/components">components</Link> section.</p>
     </div>
   );

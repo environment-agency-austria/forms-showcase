@@ -10,6 +10,8 @@
     ]
   },
   "rules": {
-    "no-import-side-effect": [true, {"ignore-module": "(\\.html|\\.css)$"}]
+    "no-import-side-effect": [true, {"ignore-module": "(\\.html|\\.css)$"}],
+    "no-submodule-imports": [true, "!!raw-loader!."],
+    "no-implicit-dependencies": [true, ["!!raw-loader!."]]
   }
 }
