@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { ApiPage } from '../shared/ApiPage';
 import { PropInfo } from '../shared/PropInfo';
 
-const introExample = require('!!raw-loader!./examples/FieldGroup.js'); // eslint-disable-line
+import FieldGroupJs from '!!raw-loader!./examples/FieldGroup.js';
 
 export const FieldGroupPage = (): JSX.Element => {
   return (
@@ -13,7 +13,7 @@ export const FieldGroupPage = (): JSX.Element => {
       title="FieldGroup"
       description="Defines a collection of fields. It will combine its values to a sub-object and provides the possibility
       to attach validators to the group."
-      codeExample={introExample}
+      codeExample={FieldGroupJs}
       parent="core"
     >
       <h2>Properties</h2>

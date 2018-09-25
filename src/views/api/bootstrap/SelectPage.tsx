@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { ApiPage } from '../shared/ApiPage';
 import { PropInfo } from '../shared/PropInfo';
 
-const introExample = require('!!raw-loader!./examples/Select.js'); // eslint-disable-line
+import SelectJs from '!!raw-loader!./examples/Select.js';
 
 export const SelectPage = (): JSX.Element => {
   return (
@@ -14,7 +14,7 @@ export const SelectPage = (): JSX.Element => {
       description="Defines a bootstrap form line containing a react-select dropdown. Additionally it can render
       an info button and info alert as well as validation messages. If the user adds the required validator then
       it will mark the field as required as well."
-      codeExample={introExample}
+      codeExample={SelectJs}
       parent="bootstrap"
     >
       <h2>Properties</h2>

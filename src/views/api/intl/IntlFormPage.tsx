@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import { ApiPage } from '../shared/ApiPage';
 
-const introExample = require('!!raw-loader!./examples/IntlForm.js'); // eslint-disable-line
+import IntlFormJs from '!!raw-loader!./examples/IntlForm.js';
 
 export const IntlFormPage = (): JSX.Element => {
   return (
@@ -12,7 +12,7 @@ export const IntlFormPage = (): JSX.Element => {
       title="IntlForm"
       description="Drop-in replacement for regular Form component. Enables react-intl support.
       Must live inside a IntlProvider."
-      codeExample={introExample}
+      codeExample={IntlFormJs}
       parent="intl"
     >
       <h2>Properties</h2>

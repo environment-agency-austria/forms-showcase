@@ -8,8 +8,8 @@ import callbacksDemo from './examples/FieldCallbacks';
 // tslint:disable-next-line:import-name
 import lifecyclesDemo from './examples/FieldLifecycles';
 
-const callbacks = require('!!raw-loader!./examples/FieldCallbacks.js'); // eslint-disable-line
-const lifecycles = require('!!raw-loader!./examples/FieldLifecycles.js'); // eslint-disable-line
+import FieldCallbacksJs from '!!raw-loader!./examples/FieldCallbacks.js';
+import FieldLifecyclesJs from '!!raw-loader!./examples/FieldLifecycles.js';
 
 export const FieldPage = (): JSX.Element => {
   return (
@@ -22,14 +22,14 @@ export const FieldPage = (): JSX.Element => {
         title="Field callbacks"
         description="Showcase of the field callbacks"
         component={callbacksDemo}
-        code={callbacks}
+        code={FieldCallbacksJs}
       />
 
       <Showcase
         title="Value lifecycles"
         description="Showcase of the field lifecycle hooks"
         component={lifecyclesDemo}
-        code={lifecycles}
+        code={FieldLifecyclesJs}
       />
     </ComponentPage>
   );

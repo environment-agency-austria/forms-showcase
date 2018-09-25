@@ -10,9 +10,9 @@ import submitArgsDemo from './examples/FormButtonSubmitArgs';
 // tslint:disable-next-line:import-name
 import simpleFormButtonDemo from './examples/SimpleFormButton';
 
-const simpleFormButton = require('!!raw-loader!./examples/SimpleFormButton.js'); // eslint-disable-line
-const disabledFormButton = require('!!raw-loader!./examples/DisabledFormButton.js'); // eslint-disable-line
-const submitArgs = require('!!raw-loader!./examples/FormButtonSubmitArgs.js'); // eslint-disable-line
+import DisabledFormButtonJs from '!!raw-loader!./examples/DisabledFormButton.js';
+import FormButtonSubmitArgsJs from '!!raw-loader!./examples/FormButtonSubmitArgs.js';
+import SimpleFormButtonJs from '!!raw-loader!./examples/SimpleFormButton.js';
 
 export const FormButtonPage = (): JSX.Element => {
   return (
@@ -27,21 +27,21 @@ export const FormButtonPage = (): JSX.Element => {
         title="FormButton"
         description="Showcase of the form button"
         component={simpleFormButtonDemo}
-        code={simpleFormButton}
+        code={SimpleFormButtonJs}
       />
 
       <Showcase
         title="Submit args"
         description="Arguments to the form.onSubmit handler can be passed this way"
         component={submitArgsDemo}
-        code={submitArgs}
+        code={FormButtonSubmitArgsJs}
       />
 
       <Showcase
         title="Disabled form"
         description="FormButtons are disabled if the form is disabled too"
         component={disabledFormButtonDemo}
-        code={disabledFormButton}
+        code={DisabledFormButtonJs}
       />
     </ComponentPage>
   );

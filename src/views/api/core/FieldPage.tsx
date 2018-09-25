@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { ApiPage } from '../shared/ApiPage';
 import { PropInfo } from '../shared/PropInfo';
 
-const introExample = require('!!raw-loader!./examples/Field.js'); // eslint-disable-line
+import FieldJs from '!!raw-loader!./examples/Field.js';
 
 // tslint:disable-next-line:max-func-body-length
 export const FieldPage = (): JSX.Element => {
@@ -13,7 +13,7 @@ export const FieldPage = (): JSX.Element => {
     <ApiPage
       title="Field"
       description="Defines a form field which will be managed by the Form."
-      codeExample={introExample}
+      codeExample={FieldJs}
       parent="core"
     >
       <h2>Properties</h2>

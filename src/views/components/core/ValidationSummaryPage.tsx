@@ -6,7 +6,7 @@ import { Showcase } from '../shared/Showcase';
 // tslint:disable-next-line:import-name
 import simpleDemo from './examples/SimpleValidationSummary';
 
-const simple = require('!!raw-loader!./examples/SimpleValidationSummary.js'); // eslint-disable-line
+import SimpleValidationSummaryJs from '!!raw-loader!./examples/SimpleValidationSummary.js';
 
 export const ValidationSummaryPage = (): JSX.Element => {
   return (
@@ -20,7 +20,7 @@ export const ValidationSummaryPage = (): JSX.Element => {
         title="Showcase"
         description="Showcase of the validation summary. Click on submit to display the summary."
         component={simpleDemo}
-        code={simple}
+        code={SimpleValidationSummaryJs}
       />
     </ComponentPage>
   );

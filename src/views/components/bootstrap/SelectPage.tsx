@@ -6,7 +6,7 @@ import { Showcase } from '../shared/Showcase';
 // tslint:disable-next-line:import-name
 import simpleSelectDemo from './examples/SimpleSelect';
 
-const simpleSelect = require('!!raw-loader!./examples/SimpleSelect.js'); // eslint-disable-line
+import SimpleSelectJs from '!!raw-loader!./examples/SimpleSelect.js';
 
 export const SelectPage = (): JSX.Element => {
   return (
@@ -21,7 +21,7 @@ export const SelectPage = (): JSX.Element => {
         title="Bootstrap select"
         description="Showcase of the react-select integration"
         component={simpleSelectDemo}
-        code={simpleSelect}
+        code={SimpleSelectJs}
       />
     </ComponentPage>
   );

@@ -6,7 +6,7 @@ import { Showcase } from '../shared/Showcase';
 // tslint:disable-next-line:import-name
 import simpleOnOffDemo from './examples/SimpleOnOff';
 
-const simpleOnOff = require('!!raw-loader!./examples/SimpleOnOff.js'); // eslint-disable-line
+import SimpleOnOffJs from '!!raw-loader!./examples/SimpleOnOff.js';
 
 export const OnOffToggleButtonPage = (): JSX.Element => {
   return (
@@ -19,7 +19,7 @@ export const OnOffToggleButtonPage = (): JSX.Element => {
         title="Toggle button"
         description="Showcase of the toggle button"
         component={simpleOnOffDemo}
-        code={simpleOnOff}
+        code={SimpleOnOffJs}
       />
     </ComponentPage>
   );

@@ -6,7 +6,7 @@ import { Showcase } from '../shared/Showcase';
 // tslint:disable-next-line:import-name
 import simpleValidationSummaryDemo from './examples/SimpleValidationSummary';
 
-const simpleValidationSummary = require('!!raw-loader!./examples/SimpleValidationSummary.js'); // eslint-disable-line
+import SimpleValidationSummaryJs from '!!raw-loader!./examples/SimpleValidationSummary.js';
 
 export const ValidationSummaryPage = (): JSX.Element => {
   return (
@@ -20,7 +20,7 @@ export const ValidationSummaryPage = (): JSX.Element => {
         title="DatePicker"
         description="Showcase of a simple validation summary. Push submit to see the error."
         component={simpleValidationSummaryDemo}
-        code={simpleValidationSummary}
+        code={SimpleValidationSummaryJs}
       />
     </ComponentPage>
   );

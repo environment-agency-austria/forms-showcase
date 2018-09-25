@@ -6,7 +6,7 @@ import { Showcase } from '../shared/Showcase';
 // tslint:disable-next-line:import-name
 import formDemo from './examples/IntlFormExample';
 
-const form = require('!!raw-loader!./examples/IntlFormExample.js'); // eslint-disable-line
+import IntlFormExampleJs from '!!raw-loader!./examples/IntlFormExample.js';
 
 export const IntlFormPage = (): JSX.Element => {
   return (
@@ -20,7 +20,7 @@ export const IntlFormPage = (): JSX.Element => {
         title="Localized form"
         description="Showcase of the i18n support"
         component={formDemo}
-        code={form}
+        code={IntlFormExampleJs}
       />
     </ComponentPage>
   );

@@ -8,7 +8,7 @@ import { Showcase } from '../shared/Showcase';
 // tslint:disable-next-line:import-name
 import simpleDemo from './examples/SimpleFormText';
 
-const simple = require('!!raw-loader!./examples/SimpleFormText.js'); // eslint-disable-line
+import SimpleFormTextJs from '!!raw-loader!./examples/SimpleFormText.js';
 
 export const FormTextPage = (): JSX.Element => {
   return (
@@ -25,7 +25,7 @@ export const FormTextPage = (): JSX.Element => {
         title="FormText"
         description="Showcase of the form text"
         component={simpleDemo}
-        code={simple}
+        code={SimpleFormTextJs}
       />
 
       <h2>Usage with i18n</h2>

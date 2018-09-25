@@ -3,7 +3,7 @@ import * as React from 'react';
 import { ApiPage } from '../shared/ApiPage';
 import { PropInfo } from '../shared/PropInfo';
 
-const introExample = require('!!raw-loader!./examples/FormButton.js'); // eslint-disable-line
+import FormButtonJs from '!!raw-loader!./examples/FormButton.js';
 
 export const FormButtonPage = (): JSX.Element => {
   return (
@@ -12,7 +12,7 @@ export const FormButtonPage = (): JSX.Element => {
       description="Defines a button that integrates into the form context. It will
       be disabled when the form is busy or disabled. You can also pass submitArgs to
       the onSubmit handler this way."
-      codeExample={introExample}
+      codeExample={FormButtonJs}
       parent="core"
     >
       <h2>Properties</h2>

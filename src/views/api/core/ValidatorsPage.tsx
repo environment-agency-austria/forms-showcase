@@ -7,13 +7,13 @@ import { Link } from 'react-router-dom';
 import { ApiPage } from '../shared/ApiPage';
 import { PropInfo } from '../shared/PropInfo';
 
-const introExample = require('!!raw-loader!./examples/Validators.js'); // eslint-disable-line
-const paramsExample = require('!!raw-loader!./examples/ValidatorsWithParams.js'); // eslint-disable-line
-const errorExample = require('!!raw-loader!./examples/ErrorObject.js'); // eslint-disable-line
-const errorMessageExample = require('!!raw-loader!./examples/ErrorMessage.js'); // eslint-disable-line
-const customValidatorExample = require('!!raw-loader!./examples/CustomValidator.js'); // eslint-disable-line
-const customAsyncValidatorExample = require('!!raw-loader!./examples/CustomAsyncValidator.js'); // eslint-disable-line
-const customFormValidatorExample = require('!!raw-loader!./examples/CustomFormValidator.js'); // eslint-disable-line
+import CustomAsyncValidatorJs from '!!raw-loader!./examples/CustomAsyncValidator.js';
+import CustomFormValidatorJs from '!!raw-loader!./examples/CustomFormValidator.js';
+import CustomValidatorJs from '!!raw-loader!./examples/CustomValidator.js';
+import ErrorMessageJs from '!!raw-loader!./examples/ErrorMessage.js';
+import ErrorObjectJs from '!!raw-loader!./examples/ErrorObject.js';
+import ValidatorsJs from '!!raw-loader!./examples/Validators.js';
+import ValidatorsWithParamsJs from '!!raw-loader!./examples/ValidatorsWithParams.js';
 
 // tslint:disable-next-line:max-func-body-length
 export const ValidatorsPage = (): JSX.Element => {
@@ -22,7 +22,7 @@ export const ValidatorsPage = (): JSX.Element => {
       title="Validators"
       description="There are two types of validators, synchronous and asynchronous validators.
       Those can be attached to either a Form or a FormGroup and will get triggered automatically."
-      codeExample={introExample}
+      codeExample={ValidatorsJs}
       parent="core"
       hideComponentLink
     >
@@ -130,7 +130,7 @@ export const ValidatorsPage = (): JSX.Element => {
         If a validator needs additional parameters (like <mark>minLength</mark> and <mark>maxLength</mark> do), you
         can use the helper function <mark>validators.withParam</mark>. Example usage to pass the parameter 5 to the minLength validator:
       </p>
-      <PrismCode className="lang-jsx" component="pre">{paramsExample}</PrismCode>
+      <PrismCode className="lang-jsx" component="pre">{ValidatorsWithParamsJs}</PrismCode>
 
       <h2>Writing your own validator</h2>
       <p>You can very easily add your own validation logic by writing custom validation functions.</p>
@@ -171,15 +171,15 @@ export const ValidatorsPage = (): JSX.Element => {
             The field is invalid. An error object can be used instead of a String to be able
             to use message templates. This is useful if you use i18n and message-ids. The
             error object must have the following shape:
-            <PrismCode className="lang-jsx" component="pre">{errorExample}</PrismCode>
+            <PrismCode className="lang-jsx" component="pre">{ErrorObjectJs}</PrismCode>
             This allows you to write your error message as following:
-            <PrismCode className="lang-jsx" component="pre">{errorMessageExample}</PrismCode>
+            <PrismCode className="lang-jsx" component="pre">{ErrorMessageJs}</PrismCode>
           </dd>
         </dl>
 
         <h6>Simple example validator</h6>
         <p>Example implementation of an validator that checks if the input is the value 'OK'.</p>
-        <PrismCode className="lang-jsx" component="pre">{customValidatorExample}</PrismCode>
+        <PrismCode className="lang-jsx" component="pre">{CustomValidatorJs}</PrismCode>
       </PropInfo>
 
       <PropInfo name="Custom asynchronous validator">
@@ -192,7 +192,7 @@ export const ValidatorsPage = (): JSX.Element => {
 
         <h6>Simple example validator</h6>
         <p>Example implementation of an asynchronous validator that checks the value against an api.</p>
-        <PrismCode className="lang-jsx" component="pre">{customAsyncValidatorExample}</PrismCode>
+        <PrismCode className="lang-jsx" component="pre">{CustomAsyncValidatorJs}</PrismCode>
       </PropInfo>
 
       <PropInfo name="Custom form-wide validator">
@@ -226,7 +226,7 @@ export const ValidatorsPage = (): JSX.Element => {
 
         <h6>Simple example validator</h6>
         <p>Example implementation of an validator that does a validation form-wide.</p>
-        <PrismCode className="lang-jsx" component="pre">{customFormValidatorExample}</PrismCode>
+        <PrismCode className="lang-jsx" component="pre">{CustomFormValidatorJs}</PrismCode>
       </PropInfo>
     </ApiPage>
   );

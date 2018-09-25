@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import { ApiPage } from '../shared/ApiPage';
 
-const introExample = require('!!raw-loader!./examples/FormButton.js'); // eslint-disable-line
+import FormButtonJs from '!!raw-loader!./examples/FormButton.js';
 
 export const FormButtonPage = (): JSX.Element => {
   return (
@@ -12,7 +12,7 @@ export const FormButtonPage = (): JSX.Element => {
       title="FormButton"
       description="Defines a bootstrap button that integrates into the Form context.
       It will be disabled when the form is busy or disabled."
-      codeExample={introExample}
+      codeExample={FormButtonJs}
       parent="bootstrap"
     >
       <h2>Properties</h2>

@@ -5,14 +5,14 @@ import { Link } from 'react-router-dom';
 import { ApiPage } from '../shared/ApiPage';
 import { PropInfo } from '../shared/PropInfo';
 
-const introExample = require('!!raw-loader!./examples/OnOffToggleButton.js'); // eslint-disable-line
+import OnOffToggleButtonJs from '!!raw-loader!./examples/OnOffToggleButton.js';
 
 export const OnOffToggleButtonPage = (): JSX.Element => {
   return (
     <ApiPage
       title="OnOffToggleButton"
       description="Defines a bootstrap button group that can be toggled between true and false."
-      codeExample={introExample}
+      codeExample={OnOffToggleButtonJs}
       parent="bootstrap"
     >
       <h2>Properties</h2>

@@ -3,7 +3,7 @@ import * as React from 'react';
 import { ApiPage } from '../shared/ApiPage';
 import { PropInfo } from '../shared/PropInfo';
 
-const introExample = require('!!raw-loader!./examples/ValidationSummary.js'); // eslint-disable-line
+import ValidationSummaryJs from '!!raw-loader!./examples/ValidationSummary.js';
 
 export const ValidationSummaryPage = (): JSX.Element => {
   return (
@@ -11,7 +11,7 @@ export const ValidationSummaryPage = (): JSX.Element => {
       title="ValidationSummary"
       description="Displays a clickable list of errors from the current form. When an error is clicked,
       the corresponding input field is focused."
-      codeExample={introExample}
+      codeExample={ValidationSummaryJs}
       parent="core"
     >
       <h2>Properties</h2>

@@ -7,9 +7,9 @@ import { Link } from 'react-router-dom';
 import { ApiPage } from '../shared/ApiPage';
 import { PropInfo } from '../shared/PropInfo';
 
-const introExample = require('!!raw-loader!./examples/Input.js'); // eslint-disable-line
-const customInputExample = require('!!raw-loader!./examples/CustomInput.js'); // eslint-disable-line
-const customInputUsageExample = require('!!raw-loader!./examples/CustomInputUsage.js'); // eslint-disable-line
+import CustomInputJs from '!!raw-loader!./examples/CustomInput.js';
+import CustomInputUsageJs from '!!raw-loader!./examples/CustomInputUsage.js';
+import InputJs from '!!raw-loader!./examples/Input.js';
 
 // tslint:disable-next-line:max-func-body-length
 export const InputPage = (): JSX.Element => {
@@ -19,7 +19,7 @@ export const InputPage = (): JSX.Element => {
       description="Defines a form line containing a label and an input. Additionally it will render
       validation messages. If the user adds the required validator then it
       will mark the field as required as well."
-      codeExample={introExample}
+      codeExample={InputJs}
       parent="core"
     >
       <h2>Properties</h2>
@@ -113,9 +113,9 @@ export const InputPage = (): JSX.Element => {
 
       <h5>Example custom input</h5>
       <p>This is an example implentation of a very simple input component.</p>
-      <PrismCode className="lang-jsx" component="pre">{customInputExample}</PrismCode>
+      <PrismCode className="lang-jsx" component="pre">{CustomInputJs}</PrismCode>
       <p>Usage of your custom input:</p>
-      <PrismCode className="lang-jsx" component="pre">{customInputUsageExample}</PrismCode>
+      <PrismCode className="lang-jsx" component="pre">{CustomInputUsageJs}</PrismCode>
     </ApiPage>
   );
 };

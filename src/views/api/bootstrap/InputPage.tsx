@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { ApiPage } from '../shared/ApiPage';
 import { PropInfo } from '../shared/PropInfo';
 
-const introExample = require('!!raw-loader!./examples/Input.js'); // eslint-disable-line
+import InputJs from '!!raw-loader!./examples/Input.js';
 
 export const InputPage = (): JSX.Element => {
   return (
@@ -14,7 +14,7 @@ export const InputPage = (): JSX.Element => {
       description="Defines a bootstrap form line containing a label and an input. Additionally it can
       render an info button and info alert as well as validation messages. If the user adds the required
       validator then it will mark the field as required as well."
-      codeExample={introExample}
+      codeExample={InputJs}
       parent="bootstrap"
     >
       <h2>Properties</h2>

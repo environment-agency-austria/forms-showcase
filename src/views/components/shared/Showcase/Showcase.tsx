@@ -4,15 +4,12 @@ import * as React from 'react';
 import PrismCode from 'react-prism';
 import { Button } from 'reactstrap';
 
-interface IShowcaseComponentProps {
-  logMessage?: ((msg: string) => void);
-}
-
 interface IShowcaseProps {
   title: string;
   description: string;
   code: string;
-  component: React.ComponentType<IShowcaseComponentProps>;
+  // tslint:disable-next-line:no-any
+  component: any;
 }
 
 interface IShowcaseState {

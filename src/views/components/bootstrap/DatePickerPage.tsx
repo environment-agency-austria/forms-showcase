@@ -6,7 +6,7 @@ import { Showcase } from '../shared/Showcase';
 // tslint:disable-next-line:import-name
 import simpleDatePickerDemo from './examples/SimpleDatePicker';
 
-const simpleDatePicker = require('!!raw-loader!./examples/SimpleDatePicker.js'); // eslint-disable-line
+import SimpleDatePickerJs from '!!raw-loader!./examples/SimpleDatePicker.js';
 
 export const DatePickerPage = (): JSX.Element => {
   return (
@@ -21,7 +21,7 @@ export const DatePickerPage = (): JSX.Element => {
         title="DatePicker"
         description="Showcase of a simple datepicker"
         component={simpleDatePickerDemo}
-        code={simpleDatePicker}
+        code={SimpleDatePickerJs}
       />
     </ComponentPage>
   );

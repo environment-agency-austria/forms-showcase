@@ -8,8 +8,8 @@ import reusableDemo from './examples/ReusableFieldGroup';
 // tslint:disable-next-line:import-name
 import simpleDemo from './examples/SimpleFieldGroup';
 
-const simple = require('!!raw-loader!./examples/SimpleFieldGroup.js'); // eslint-disable-line
-const reusable = require('!!raw-loader!./examples/ReusableFieldGroup.js'); // eslint-disable-line
+import ReusableFieldGroupJs from '!!raw-loader!./examples/ReusableFieldGroup.js';
+import SimpleFieldGroupJs from '!!raw-loader!./examples/SimpleFieldGroup.js';
 
 export const FieldGroupPage = (): JSX.Element => {
   return (
@@ -23,14 +23,14 @@ export const FieldGroupPage = (): JSX.Element => {
         title="Simple field group"
         description="Showcase of a simple field group"
         component={simpleDemo}
-        code={simple}
+        code={SimpleFieldGroupJs}
       />
 
       <Showcase
         title="Reuse form parts"
         description="A field group is a great way to reuse recurring fields."
         component={reusableDemo}
-        code={reusable}
+        code={ReusableFieldGroupJs}
       />
     </ComponentPage>
   );

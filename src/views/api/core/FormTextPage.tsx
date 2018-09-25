@@ -3,7 +3,7 @@ import * as React from 'react';
 import { ApiPage } from '../shared/ApiPage';
 import { PropInfo } from '../shared/PropInfo';
 
-const introExample = require('!!raw-loader!./examples/FormText.js'); // eslint-disable-line
+import FormTextJs from '!!raw-loader!./examples/FormText.js';
 
 export const FormTextPage = (): JSX.Element => {
   return (
@@ -14,7 +14,7 @@ export const FormTextPage = (): JSX.Element => {
       development is to pass every text output through the stringFormatter. This enables the
       user of the form to add the react-ocean-forms-react-intl package and get i18n support
       out of the box."
-      codeExample={introExample}
+      codeExample={FormTextJs}
       parent="core"
     >
       <h2>Properties</h2>

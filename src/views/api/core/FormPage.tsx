@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom';
 import { ApiPage } from '../shared/ApiPage';
 import { PropInfo } from '../shared/PropInfo';
 
-const introExample = require('!!raw-loader!./examples/Form.js'); // eslint-disable-line
-const valuesExample = require('!!raw-loader!./examples/ValuesExample.js'); // eslint-disable-line
+import FormJs from '!!raw-loader!./examples/Form.js';
+import ValuesExampleJs from '!!raw-loader!./examples/ValuesExample.js';
 
 // tslint:disable-next-line:max-func-body-length
 export const FormPage = (): JSX.Element => {
@@ -17,7 +17,7 @@ export const FormPage = (): JSX.Element => {
       title="Form"
       description="The form is the main component. It glues together all the
       Form logic through React's new Context api."
-      codeExample={introExample}
+      codeExample={FormJs}
       parent="core"
     >
       <h2>Properties</h2>
@@ -41,7 +41,7 @@ export const FormPage = (): JSX.Element => {
           Contains the default values of the form. Those values will be put into the according fields
           when the form initializes. Example default values object:
         </p>
-        <PrismCode className="lang-jsx" component="pre">{valuesExample}</PrismCode>
+        <PrismCode className="lang-jsx" component="pre">{ValuesExampleJs}</PrismCode>
       </PropInfo>
 
       <PropInfo name="values" type="Object">
@@ -49,7 +49,7 @@ export const FormPage = (): JSX.Element => {
           Contains the values of the form. Changing this property will update all Field values, overwriting
           their default values but also any value the user put in. Example values object:
         </p>
-        <PrismCode className="lang-jsx" component="pre">{valuesExample}</PrismCode>
+        <PrismCode className="lang-jsx" component="pre">{ValuesExampleJs}</PrismCode>
       </PropInfo>
 
       <PropInfo name="disabled" type="Boolean" defaultValue="false">

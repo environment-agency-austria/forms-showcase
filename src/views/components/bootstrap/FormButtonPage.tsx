@@ -8,8 +8,8 @@ import simpleFormButtonDemo from './examples/SimpleFormButton';
 // tslint:disable-next-line:ordered-imports
 import disabledFormButtonDemo from './examples/DisabledFormButton';
 
-const simpleFormButton = require('!!raw-loader!./examples/SimpleFormButton.js'); // eslint-disable-line
-const disabledFormButton = require('!!raw-loader!./examples/DisabledFormButton.js'); // eslint-disable-line
+import DisabledFormButtonJs from '!!raw-loader!./examples/DisabledFormButton.js';
+import SimpleFormButtonJs from '!!raw-loader!./examples/SimpleFormButton.js';
 
 export const FormButtonPage = (): JSX.Element => {
   return (
@@ -23,14 +23,14 @@ export const FormButtonPage = (): JSX.Element => {
         title="FormButton"
         description="Showcase of the form button"
         component={simpleFormButtonDemo}
-        code={simpleFormButton}
+        code={SimpleFormButtonJs}
       />
 
       <Showcase
         title="Disabled form"
         description="FormButtons are disabled if the form is disabled too"
         component={disabledFormButtonDemo}
-        code={disabledFormButton}
+        code={DisabledFormButtonJs}
       />
     </ComponentPage>
   );

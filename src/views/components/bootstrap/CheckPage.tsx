@@ -6,7 +6,7 @@ import { Showcase } from '../shared/Showcase';
 // tslint:disable-next-line:import-name
 import simpleCheckDemo from './examples/SimpleCheck';
 
-const simpleCheck = require('!!raw-loader!./examples/SimpleCheck.js'); // eslint-disable-line
+import SimpleCheckJs from '!!raw-loader!./examples/SimpleCheck.js';
 
 export const CheckPage = (): JSX.Element => {
   return (
@@ -21,7 +21,7 @@ export const CheckPage = (): JSX.Element => {
         title="Check"
         description="Showcase of a simple checkbox"
         component={simpleCheckDemo}
-        code={simpleCheck}
+        code={SimpleCheckJs}
       />
     </ComponentPage>
   );

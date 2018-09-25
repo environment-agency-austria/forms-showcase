@@ -12,12 +12,12 @@ import plaintextDemo from './examples/PlaintextForm';
 import simpleFormDemo from './examples/SimpleForm';
 // tslint:enable:import-name
 
-const defaultValues = require('!!raw-loader!./examples/DefaultValues.js'); // eslint-disable-line
-const values = require('!!raw-loader!./examples/FormValues.js'); // eslint-disable-line
-const simpleForm = require('!!raw-loader!./examples/SimpleForm.js'); // eslint-disable-line
-const formValidation = require('!!raw-loader!./examples/FormValidation.js'); // eslint-disable-line
-const disabled = require('!!raw-loader!./examples/DisabledForm.js'); // eslint-disable-line
-const plaintext = require('!!raw-loader!./examples/PlaintextForm.js'); // eslint-disable-line
+import DefaultValuesJs from '!!raw-loader!./examples/DefaultValues.js';
+import DisabledFormJs from '!!raw-loader!./examples/DisabledForm.js';
+import FormValidationJs from '!!raw-loader!./examples/FormValidation.js';
+import FormValuesJs from '!!raw-loader!./examples/FormValues.js';
+import PlaintextFormJs from '!!raw-loader!./examples/PlaintextForm.js';
+import SimpleFormJs from '!!raw-loader!./examples/SimpleForm.js';
 
 export const FormPage = (): JSX.Element => {
   return (
@@ -31,7 +31,7 @@ export const FormPage = (): JSX.Element => {
         title="Simple form"
         description="Showcase of a simple form"
         component={simpleFormDemo}
-        code={simpleForm}
+        code={SimpleFormJs}
       />
 
       <Showcase
@@ -40,7 +40,7 @@ export const FormPage = (): JSX.Element => {
         Note how the default value won't update the Field, if the user changed the input.
         However, on form reset the default value will be used again."
         component={defaultValuesDemo}
-        code={defaultValues}
+        code={DefaultValuesJs}
       />
 
       <Showcase
@@ -48,21 +48,21 @@ export const FormPage = (): JSX.Element => {
         description="Override the values of the form fields. Changing those values will override
         the Field value, even if the user changed it."
         component={valuesDemo}
-        code={values}
+        code={FormValuesJs}
       />
 
       <Showcase
         title="Disabled form"
         description="Setting the disabled prop will disable all form fields."
         component={disabledDemo}
-        code={disabled}
+        code={DisabledFormJs}
       />
 
       <Showcase
         title="Plaintext form"
         description="Setting the plaintext prop will show all form fields in a text-only mode."
         component={plaintextDemo}
-        code={plaintext}
+        code={PlaintextFormJs}
       />
 
       <Showcase
@@ -70,7 +70,7 @@ export const FormPage = (): JSX.Element => {
         description="Use a form-wide validation function before submit. Notice that
         the onSubmit callback is not invoked if you type 'bad' into the input."
         component={formValidationDemo}
-        code={formValidation}
+        code={FormValidationJs}
       />
     </ComponentPage>
   );

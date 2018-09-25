@@ -8,8 +8,8 @@ import customDemo from './examples/CustomInput';
 // tslint:disable-next-line:import-name
 import inputTypesDemo from './examples/InputTypes';
 
-const inputTypes = require('!!raw-loader!./examples/InputTypes.js'); // eslint-disable-line
-const custom = require('!!raw-loader!./examples/CustomInput.js'); // eslint-disable-line
+import CustomInputJs from '!!raw-loader!./examples/CustomInput.js';
+import InputTypesJs from '!!raw-loader!./examples/InputTypes.js';
 
 export const InputPage = (): JSX.Element => {
   return (
@@ -24,7 +24,7 @@ export const InputPage = (): JSX.Element => {
         title="Input types"
         description="Showcase of the input type support"
         component={inputTypesDemo}
-        code={inputTypes}
+        code={InputTypesJs}
       />
 
       <Showcase
@@ -33,7 +33,7 @@ export const InputPage = (): JSX.Element => {
         want to use the flexible Intl support, you should put all your text outputs through
         meta.stringFormatter."
         component={customDemo}
-        code={custom}
+        code={CustomInputJs}
       />
     </ComponentPage>
   );
