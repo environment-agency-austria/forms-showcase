@@ -1,17 +1,20 @@
-import React from 'react';
+import * as React from 'react';
 
-import ComponentPage from '../shared/ComponentPage';
-import Showcase from '../shared/Showcase';
+import { ComponentPage } from '../shared/ComponentPage';
+import { Showcase } from '../shared/Showcase';
 
+// tslint:disable-next-line:import-name
 import inputTypesDemo from './examples/InputTypes';
+// tslint:disable-next-line:import-name
 import plaintextDemo from './examples/PlainTextInput';
+// tslint:disable-next-line:ordered-imports
 import prefixSuffixDemo from './examples/InputPrefixSuffix';
 
 const inputTypes = require('!!raw-loader!./examples/InputTypes.js'); // eslint-disable-line
 const plainText = require('!!raw-loader!./examples/PlainTextInput.js'); // eslint-disable-line
 const prefixSuffix = require('!!raw-loader!./examples/InputPrefixSuffix.js'); // eslint-disable-line
 
-function InputPage() {
+export const InputPage = (): JSX.Element => {
   return (
     <ComponentPage
       title="Input"
@@ -42,6 +45,4 @@ function InputPage() {
       />
     </ComponentPage>
   );
-}
-
-export default InputPage;
+};

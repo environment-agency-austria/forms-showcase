@@ -1,13 +1,14 @@
-import React from 'react';
+import * as React from 'react';
 
-import ComponentPage from '../shared/ComponentPage';
-import Showcase from '../shared/Showcase';
+import { ComponentPage } from '../shared/ComponentPage';
+import { Showcase } from '../shared/Showcase';
 
+// tslint:disable-next-line:import-name
 import simpleDatePickerDemo from './examples/SimpleDatePicker';
 
 const simpleDatePicker = require('!!raw-loader!./examples/SimpleDatePicker.js'); // eslint-disable-line
 
-function DatePickerPage() {
+export const DatePickerPage = (): JSX.Element => {
   return (
     <ComponentPage
       title="DatePicker"
@@ -24,6 +25,4 @@ function DatePickerPage() {
       />
     </ComponentPage>
   );
-}
-
-export default DatePickerPage;
+};

@@ -1,13 +1,14 @@
-import React from 'react';
+import * as React from 'react';
 
-import ComponentPage from '../shared/ComponentPage';
-import Showcase from '../shared/Showcase';
+import { ComponentPage } from '../shared/ComponentPage';
+import { Showcase } from '../shared/Showcase';
 
+// tslint:disable-next-line:import-name
 import simpleValidationSummaryDemo from './examples/SimpleValidationSummary';
 
 const simpleValidationSummary = require('!!raw-loader!./examples/SimpleValidationSummary.js'); // eslint-disable-line
 
-function ValidationSummaryPage() {
+export const ValidationSummaryPage = (): JSX.Element => {
   return (
     <ComponentPage
       title="ValidationSummary"
@@ -23,6 +24,4 @@ function ValidationSummaryPage() {
       />
     </ComponentPage>
   );
-}
-
-export default ValidationSummaryPage;
+};

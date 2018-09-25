@@ -1,13 +1,14 @@
-import React from 'react';
+import * as React from 'react';
 
-import ComponentPage from '../shared/ComponentPage';
-import Showcase from '../shared/Showcase';
+import { ComponentPage } from '../shared/ComponentPage';
+import { Showcase } from '../shared/Showcase';
 
+// tslint:disable-next-line:import-name
 import simpleSelectDemo from './examples/SimpleSelect';
 
 const simpleSelect = require('!!raw-loader!./examples/SimpleSelect.js'); // eslint-disable-line
 
-function SelectPage() {
+export const SelectPage = (): JSX.Element => {
   return (
     <ComponentPage
       title="Select"
@@ -24,6 +25,4 @@ function SelectPage() {
       />
     </ComponentPage>
   );
-}
-
-export default SelectPage;
+};

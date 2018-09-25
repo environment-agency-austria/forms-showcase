@@ -1,18 +1,21 @@
-import React from 'react';
+import * as React from 'react';
+
+// tslint:disable-next-line:ordered-imports
 import { Switch, Route, Redirect } from 'react-router-dom';
 
+// tslint:disable-next-line:no-submodule-imports
 import 'react-ocean-forms-bootstrap/build/main.css';
 
-import InputPage from './InputPage';
-import SelectPage from './SelectPage';
-import CheckPage from './CheckPage';
-import DatePickerPage from './DatePickerPage';
-import ValidationSummaryPage from './ValidationSummaryPage';
-import FormButtonPage from './FormButtonPage';
-import OnOffToggleButtonPage from './OnOffToggleButtonPage';
-import NotFound from '../../not-found';
+import { NotFound } from '../../not-found';
+import { CheckPage } from './CheckPage';
+import { DatePickerPage } from './DatePickerPage';
+import { FormButtonPage } from './FormButtonPage';
+import { InputPage } from './InputPage';
+import { OnOffToggleButtonPage } from './OnOffToggleButtonPage';
+import { SelectPage } from './SelectPage';
+import { ValidationSummaryPage } from './ValidationSummaryPage';
 
-function Bootstrap() {
+export const Bootstrap = (): JSX.Element => {
   return (
     <Switch>
       <Route path="/components/bootstrap/input/" component={InputPage} />
@@ -26,6 +29,4 @@ function Bootstrap() {
       <Route path="*" component={NotFound} />
     </Switch>
   );
-}
-
-export default Bootstrap;
+};

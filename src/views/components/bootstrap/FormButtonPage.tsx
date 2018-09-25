@@ -1,15 +1,17 @@
-import React from 'react';
+import * as React from 'react';
 
-import ComponentPage from '../shared/ComponentPage';
-import Showcase from '../shared/Showcase';
+import { ComponentPage } from '../shared/ComponentPage';
+import { Showcase } from '../shared/Showcase';
 
+// tslint:disable-next-line:import-name
 import simpleFormButtonDemo from './examples/SimpleFormButton';
+// tslint:disable-next-line:ordered-imports
 import disabledFormButtonDemo from './examples/DisabledFormButton';
 
 const simpleFormButton = require('!!raw-loader!./examples/SimpleFormButton.js'); // eslint-disable-line
 const disabledFormButton = require('!!raw-loader!./examples/DisabledFormButton.js'); // eslint-disable-line
 
-function FormButtonPage() {
+export const FormButtonPage = (): JSX.Element => {
   return (
     <ComponentPage
       title="FormButton"
@@ -32,6 +34,4 @@ function FormButtonPage() {
       />
     </ComponentPage>
   );
-}
-
-export default FormButtonPage;
+};

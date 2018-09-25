@@ -1,13 +1,14 @@
-import React from 'react';
+import * as React from 'react';
 
-import ComponentPage from '../shared/ComponentPage';
-import Showcase from '../shared/Showcase';
+import { ComponentPage } from '../shared/ComponentPage';
+import { Showcase } from '../shared/Showcase';
 
+// tslint:disable-next-line:import-name
 import simpleCheckDemo from './examples/SimpleCheck';
 
 const simpleCheck = require('!!raw-loader!./examples/SimpleCheck.js'); // eslint-disable-line
 
-function CheckPage() {
+export const CheckPage = (): JSX.Element => {
   return (
     <ComponentPage
       title="Select"
@@ -24,6 +25,4 @@ function CheckPage() {
       />
     </ComponentPage>
   );
-}
-
-export default CheckPage;
+};

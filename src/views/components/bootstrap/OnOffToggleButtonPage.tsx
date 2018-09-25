@@ -1,13 +1,14 @@
-import React from 'react';
+import * as React from 'react';
 
-import ComponentPage from '../shared/ComponentPage';
-import Showcase from '../shared/Showcase';
+import { ComponentPage } from '../shared/ComponentPage';
+import { Showcase } from '../shared/Showcase';
 
+// tslint:disable-next-line:import-name
 import simpleOnOffDemo from './examples/SimpleOnOff';
 
 const simpleOnOff = require('!!raw-loader!./examples/SimpleOnOff.js'); // eslint-disable-line
 
-function OnOffToggleButtonPage() {
+export const OnOffToggleButtonPage = (): JSX.Element => {
   return (
     <ComponentPage
       title="OnOffToggleButton"
@@ -22,6 +23,4 @@ function OnOffToggleButtonPage() {
       />
     </ComponentPage>
   );
-}
-
-export default OnOffToggleButtonPage;
+};
