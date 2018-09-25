@@ -1,11 +1,12 @@
-import React from 'react';
+import * as React from 'react';
+
 import { Link } from 'react-router-dom';
 
 import ApiPage from '../shared/ApiPage';
 
 const introExample = require('!!raw-loader!./examples/IntlForm.js'); // eslint-disable-line
 
-function FieldPage() {
+export const IntlFormPage = (): JSX.Element => {
   return (
     <ApiPage
       title="IntlForm"
@@ -21,6 +22,4 @@ function FieldPage() {
       <p>See <Link to="../../core/form">Form</Link> for event handling.</p>
     </ApiPage>
   );
-}
-
-export default FieldPage;
+};
