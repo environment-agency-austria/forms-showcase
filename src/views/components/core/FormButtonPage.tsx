@@ -3,11 +3,8 @@ import * as React from 'react';
 import { ComponentPage } from '../shared/ComponentPage';
 import { Showcase } from '../shared/Showcase';
 
-// tslint:disable-next-line:import-name
 import disabledFormButtonDemo from './examples/DisabledFormButton';
-// tslint:disable-next-line:import-name
 import submitArgsDemo from './examples/FormButtonSubmitArgs';
-// tslint:disable-next-line:import-name
 import simpleFormButtonDemo from './examples/SimpleFormButton';
 
 import DisabledFormButtonJs from '!!raw-loader!./examples/DisabledFormButton.js';

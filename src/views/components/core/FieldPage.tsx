@@ -3,9 +3,7 @@ import * as React from 'react';
 import { ComponentPage } from '../shared/ComponentPage';
 import { Showcase } from '../shared/Showcase';
 
-// tslint:disable-next-line:import-name
 import callbacksDemo from './examples/FieldCallbacks';
-// tslint:disable-next-line:import-name
 import lifecyclesDemo from './examples/FieldLifecycles';
 
 import FieldCallbacksJs from '!!raw-loader!./examples/FieldCallbacks.js';

@@ -3,9 +3,7 @@ import * as React from 'react';
 import { ComponentPage } from '../shared/ComponentPage';
 import { Showcase } from '../shared/Showcase';
 
-// tslint:disable-next-line:import-name
 import customDemo from './examples/CustomInput';
-// tslint:disable-next-line:import-name
 import inputTypesDemo from './examples/InputTypes';
 
 import CustomInputJs from '!!raw-loader!./examples/CustomInput.js';

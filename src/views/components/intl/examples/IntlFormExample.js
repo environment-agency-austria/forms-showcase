@@ -1,7 +1,7 @@
 import React from 'react';
 import { IntlProvider, FormattedMessage, addLocaleData } from 'react-intl';
 import deLocaleData from 'react-intl/locale-data/de';
-import IntlFrom from 'react-ocean-forms-react-intl';
+import { IntlForm } from 'react-ocean-forms-react-intl';
 import { Button } from 'reactstrap';
 import { Field, validators, FormText } from 'react-ocean-forms';
 import { Input, FormButton } from 'react-ocean-forms-bootstrap';

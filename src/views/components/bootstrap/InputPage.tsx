@@ -3,12 +3,9 @@ import * as React from 'react';
 import { ComponentPage } from '../shared/ComponentPage';
 import { Showcase } from '../shared/Showcase';
 
-// tslint:disable-next-line:import-name
-import inputTypesDemo from './examples/InputTypes';
-// tslint:disable-next-line:import-name
-import plaintextDemo from './examples/PlainTextInput';
-// tslint:disable-next-line:ordered-imports
 import prefixSuffixDemo from './examples/InputPrefixSuffix';
+import inputTypesDemo from './examples/InputTypes';
+import plaintextDemo from './examples/PlainTextInput';
 
 import InputPrefixSuffixJs from '!!raw-loader!./examples/InputPrefixSuffix.js';
 import InputTypesJs from '!!raw-loader!./examples/InputTypes.js';

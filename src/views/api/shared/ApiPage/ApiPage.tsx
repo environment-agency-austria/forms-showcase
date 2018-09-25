@@ -1,6 +1,5 @@
 import * as React from 'react';
 
-// tslint:disable-next-line:import-name
 import PrismCode from 'react-prism';
 import { Link } from 'react-router-dom';
 import { Breadcrumb, BreadcrumbItem } from 'reactstrap';

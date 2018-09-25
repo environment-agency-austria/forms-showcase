@@ -3,7 +3,6 @@ import * as React from 'react';
 import { ComponentPage } from '../shared/ComponentPage';
 import { Showcase } from '../shared/Showcase';
 
-// tslint:disable-next-line:import-name
 import simpleDatePickerDemo from './examples/SimpleDatePicker';
 
 import SimpleDatePickerJs from '!!raw-loader!./examples/SimpleDatePicker.js';

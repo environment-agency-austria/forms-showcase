@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import { ComponentPage } from '../shared/ComponentPage';
 import { Showcase } from '../shared/Showcase';
 
-// tslint:disable-next-line:import-name
 import simpleDemo from './examples/SimpleFormText';
 
 import SimpleFormTextJs from '!!raw-loader!./examples/SimpleFormText.js';

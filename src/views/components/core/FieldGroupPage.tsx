@@ -3,9 +3,7 @@ import * as React from 'react';
 import { ComponentPage } from '../shared/ComponentPage';
 import { Showcase } from '../shared/Showcase';
 
-// tslint:disable-next-line:import-name
 import reusableDemo from './examples/ReusableFieldGroup';
-// tslint:disable-next-line:import-name
 import simpleDemo from './examples/SimpleFieldGroup';
 
 import ReusableFieldGroupJs from '!!raw-loader!./examples/ReusableFieldGroup.js';
