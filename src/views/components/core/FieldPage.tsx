@@ -1,15 +1,17 @@
-import React from 'react';
+import * as React from 'react';
 
-import ComponentPage from '../shared/ComponentPage';
-import Showcase from '../shared/Showcase';
+import { ComponentPage } from '../shared/ComponentPage';
+import { Showcase } from '../shared/Showcase';
 
+// tslint:disable-next-line:import-name
 import callbacksDemo from './examples/FieldCallbacks';
+// tslint:disable-next-line:import-name
 import lifecyclesDemo from './examples/FieldLifecycles';
 
 const callbacks = require('!!raw-loader!./examples/FieldCallbacks.js'); // eslint-disable-line
 const lifecycles = require('!!raw-loader!./examples/FieldLifecycles.js'); // eslint-disable-line
 
-function FieldPage() {
+export const FieldPage = (): JSX.Element => {
   return (
     <ComponentPage
       title="Field"
@@ -31,6 +33,4 @@ function FieldPage() {
       />
     </ComponentPage>
   );
-}
-
-export default FieldPage;
+};

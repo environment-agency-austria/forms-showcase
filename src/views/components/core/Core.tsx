@@ -1,16 +1,16 @@
-import React from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom';
+import * as React from 'react';
+import { Redirect, Route, Switch } from 'react-router-dom';
 
-import FormPage from './FormPage';
-import FieldPage from './FieldPage';
-import FieldGroupPage from './FieldGroupPage';
-import ValidationSummaryPage from './ValidationSummaryPage';
-import InputPage from './InputPage';
-import FormButtonPage from './FormButtonPage';
-import FormTextPage from './FormTextPage';
-import NotFound from '../../not-found';
+import { NotFound } from '../../not-found';
+import { FieldGroupPage } from './FieldGroupPage';
+import { FieldPage } from './FieldPage';
+import { FormButtonPage } from './FormButtonPage';
+import { FormPage } from './FormPage';
+import { FormTextPage } from './FormTextPage';
+import { InputPage } from './InputPage';
+import { ValidationSummaryPage } from './ValidationSummaryPage';
 
-function Core() {
+export const Core = (): JSX.Element => {
   return (
     <Switch>
       <Route path="/components/core/form/" component={FormPage} />
@@ -24,6 +24,4 @@ function Core() {
       <Route path="*" component={NotFound} />
     </Switch>
   );
-}
-
-export default Core;
+};

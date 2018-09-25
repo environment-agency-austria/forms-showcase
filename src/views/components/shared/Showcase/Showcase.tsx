@@ -5,7 +5,7 @@ import PrismCode from 'react-prism';
 import { Button } from 'reactstrap';
 
 interface IShowcaseComponentProps {
-  logMessage(msg: string): void;
+  logMessage?: ((msg: string) => void);
 }
 
 interface IShowcaseProps {

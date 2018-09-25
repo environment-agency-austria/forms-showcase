@@ -1,14 +1,16 @@
-import React from 'react';
+import * as React from 'react';
 
-import ComponentPage from '../shared/ComponentPage';
-import Showcase from '../shared/Showcase';
+import { ComponentPage } from '../shared/ComponentPage';
+import { Showcase } from '../shared/Showcase';
 
-import simpleFormDemo from './examples/SimpleForm';
+// tslint:disable:import-name
 import defaultValuesDemo from './examples/DefaultValues';
-import valuesDemo from './examples/FormValues';
-import formValidationDemo from './examples/FormValidation';
 import disabledDemo from './examples/DisabledForm';
+import formValidationDemo from './examples/FormValidation';
+import valuesDemo from './examples/FormValues';
 import plaintextDemo from './examples/PlaintextForm';
+import simpleFormDemo from './examples/SimpleForm';
+// tslint:enable:import-name
 
 const defaultValues = require('!!raw-loader!./examples/DefaultValues.js'); // eslint-disable-line
 const values = require('!!raw-loader!./examples/FormValues.js'); // eslint-disable-line
@@ -17,7 +19,7 @@ const formValidation = require('!!raw-loader!./examples/FormValidation.js'); // 
 const disabled = require('!!raw-loader!./examples/DisabledForm.js'); // eslint-disable-line
 const plaintext = require('!!raw-loader!./examples/PlaintextForm.js'); // eslint-disable-line
 
-function FormPage() {
+export const FormPage = (): JSX.Element => {
   return (
     <ComponentPage
       title="Form"
@@ -72,6 +74,4 @@ function FormPage() {
       />
     </ComponentPage>
   );
-}
-
-export default FormPage;
+};

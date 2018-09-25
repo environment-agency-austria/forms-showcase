@@ -1,19 +1,22 @@
-import React from 'react';
+import * as React from 'react';
 
-import ComponentPage from '../shared/ComponentPage';
-import Showcase from '../shared/Showcase';
+import { ComponentPage } from '../shared/ComponentPage';
+import { Showcase } from '../shared/Showcase';
 
-import simpleDemo from './examples/SimpleFieldGroup';
+// tslint:disable-next-line:import-name
 import reusableDemo from './examples/ReusableFieldGroup';
+// tslint:disable-next-line:import-name
+import simpleDemo from './examples/SimpleFieldGroup';
 
 const simple = require('!!raw-loader!./examples/SimpleFieldGroup.js'); // eslint-disable-line
 const reusable = require('!!raw-loader!./examples/ReusableFieldGroup.js'); // eslint-disable-line
 
-function FieldGroupPage() {
+export const FieldGroupPage = (): JSX.Element => {
   return (
     <ComponentPage
       title="FieldGroup"
-      description="Defines a collection of fields. It will combine its values to a sub-object and provides the possibility to attach validators to the group."
+      description="Defines a collection of fields. It will combine its values to
+      a sub-object and provides the possibility to attach validators to the group."
       parent="core"
     >
       <Showcase
@@ -31,6 +34,4 @@ function FieldGroupPage() {
       />
     </ComponentPage>
   );
-}
-
-export default FieldGroupPage;
+};

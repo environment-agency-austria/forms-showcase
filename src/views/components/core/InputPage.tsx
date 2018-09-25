@@ -1,15 +1,17 @@
-import React from 'react';
+import * as React from 'react';
 
-import ComponentPage from '../shared/ComponentPage';
-import Showcase from '../shared/Showcase';
+import { ComponentPage } from '../shared/ComponentPage';
+import { Showcase } from '../shared/Showcase';
 
-import inputTypesDemo from './examples/InputTypes';
+// tslint:disable-next-line:import-name
 import customDemo from './examples/CustomInput';
+// tslint:disable-next-line:import-name
+import inputTypesDemo from './examples/InputTypes';
 
 const inputTypes = require('!!raw-loader!./examples/InputTypes.js'); // eslint-disable-line
 const custom = require('!!raw-loader!./examples/CustomInput.js'); // eslint-disable-line
 
-function InputPage() {
+export const InputPage = (): JSX.Element => {
   return (
     <ComponentPage
       title="Input"
@@ -35,6 +37,4 @@ function InputPage() {
       />
     </ComponentPage>
   );
-}
-
-export default InputPage;
+};

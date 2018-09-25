@@ -1,14 +1,16 @@
-import React from 'react';
+import * as  React from 'react';
+
 import { Link } from 'react-router-dom';
 
-import ComponentPage from '../shared/ComponentPage';
-import Showcase from '../shared/Showcase';
+import { ComponentPage } from '../shared/ComponentPage';
+import { Showcase } from '../shared/Showcase';
 
+// tslint:disable-next-line:import-name
 import simpleDemo from './examples/SimpleFormText';
 
 const simple = require('!!raw-loader!./examples/SimpleFormText.js'); // eslint-disable-line
 
-function FormTextPage() {
+export const FormTextPage = (): JSX.Element => {
   return (
     <ComponentPage
       title="FormText"
@@ -34,6 +36,4 @@ function FormTextPage() {
       </p>
     </ComponentPage>
   );
-}
-
-export default FormTextPage;
+};
