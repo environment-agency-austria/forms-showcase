@@ -2,45 +2,48 @@ import * as React from 'react';
 import { HashRouter, Link, Route, Switch } from 'react-router-dom';
 import { Collapse, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
 
+// tslint:disable-next-line:no-import-side-effect
 import 'babel-polyfill';
 
+// tslint:disable-next-line:no-submodule-imports
 import 'bootstrap/dist/css/bootstrap.css';
+// tslint:disable-next-line:no-submodule-imports no-implicit-dependencies
 import 'react-datetime/css/react-datetime.css';
 
-// @ts-ignore
-import Prism from "prismjs";
+import * as Prism from 'prismjs';
+// tslint:disable-next-line:no-console
+console.log(Prism.highlightElement);
 
-import Api from './views/api';
-import Components from './views/components';
-import Home from './views/home';
-import NotFound from './views/not-found';
+import { Api } from './views/api';
+import { Components } from './views/components';
+import { Home } from './views/home';
+import { NotFound } from './views/not-found';
 
 interface IAppState {
   isOpen: boolean;
 }
 
-class App extends React.Component<{}, IAppState> {
+export class App extends React.Component<{}, IAppState> {
   constructor(props: {}) {
     super(props);
 
-    this.toggle = this.toggle.bind(this);
     this.state = {
-      isOpen: false
+      isOpen: false,
     };
   }
 
-  private toggle() {
+  private toggle = (): void => {
     this.setState({
-      isOpen: !this.state.isOpen
+      isOpen: !this.state.isOpen,
     });
   }
 
   // tslint:disable-next-line:member-ordering
-  public render() {
+  public render(): JSX.Element {
     return (
       <HashRouter>
         <div className="App">
-          <Navbar color="dark" expand="md" fixed="top">
+          <Navbar dark color="dark" expand="md" fixed="top">
             <NavbarBrand tag={Link} to="/">Ocean Forms</NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
@@ -71,5 +74,3 @@ class App extends React.Component<{}, IAppState> {
     );
   }
 }
-
-export default App;
