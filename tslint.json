@@ -1,8 +1,5 @@
 {
-  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
-  "rules": {
-    "jsx-boolean-value": false
-  },
+  "extends": ["tslint-eaa-contrib"],
   "linterOptions": {
     "exclude": [
       "config/**/*.js",

@@ -38,6 +38,10 @@
     "raw-loader": "^0.5.1",
     "react-app-rewired": "^1.6.2",
     "react-prism": "^4.3.2",
+    "tslint-consistent-codestyle": "^1.13.3",
+    "tslint-eaa-contrib": "^0.1.2",
+    "tslint-microsoft-contrib": "^5.2.1",
+    "tslint-react": "^3.6.0",
     "typescript": "^3.0.3"
   },
   "homepage": "https://environment-agency-austria.github.io/forms-showcase/"
