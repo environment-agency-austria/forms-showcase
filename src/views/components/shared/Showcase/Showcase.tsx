@@ -1,14 +1,32 @@
-import React from 'react';
+import * as React from 'react';
+
+// tslint:disable-next-line:import-name
 import PrismCode from 'react-prism';
 import { Button } from 'reactstrap';
 
-class Showcase extends React.Component {
-  state = {
+interface IShowcaseComponentProps {
+  logMessage(msg: string): void;
+}
+
+interface IShowcaseProps {
+  title: string;
+  description: string;
+  code: string;
+  component: React.ComponentType<IShowcaseComponentProps>;
+}
+
+interface IShowcaseState {
+  showCode: boolean;
+  messageLog: string[];
+}
+
+export class Showcase extends React.Component<IShowcaseProps, IShowcaseState> {
+  public state: IShowcaseState = {
     messageLog: [],
     showCode: false,
-  }
+  };
 
-  logMessage = (msg) => {
+  private logMessage = (msg: string): void => {
     this.setState(prevState => {
       const { messageLog } = prevState;
 
@@ -25,10 +43,20 @@ class Showcase extends React.Component {
     });
   }
 
-  render() {
+  private hideCode = (): void => {
+    this.setState({ showCode: false });
+  }
+
+  private showCode = (): void => {
+    this.setState({ showCode: true });
+  }
+
+  // tslint:disable-next-line:member-ordering
+  public render(): JSX.Element {
     const {
       title,
       description,
+      // tslint:disable-next-line:naming-convention
       component: Component,
       code,
     } = this.props;
@@ -51,14 +79,14 @@ class Showcase extends React.Component {
         <div className="source">
           {showCode ? (
             <React.Fragment>
-              <h6><Button color="link" onClick={() => this.setState({ showCode: false })}>Hide sourcecode</Button></h6>
+              <h6><Button color="link" onClick={this.hideCode}>Hide sourcecode</Button></h6>
               <PrismCode className="lang-jsx" component="pre">{code}</PrismCode>
             </React.Fragment>
           ) :
             <h6 className="mb-0">
               <Button
                 color="link"
-                onClick={() => this.setState({ showCode: true })}
+                onClick={this.showCode}
               >
                 Show sourcecode
               </Button>
@@ -68,6 +96,4 @@ class Showcase extends React.Component {
       </div>
     );
   }
-};
-
-export default Showcase;
+}
