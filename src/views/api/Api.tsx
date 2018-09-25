@@ -3,7 +3,7 @@ import * as React from 'react';
 import { Link, Redirect, Route, Switch } from 'react-router-dom';
 import { Col, Nav, NavItem, NavLink, Row } from 'reactstrap';
 
-import NotFound from '../not-found';
+import { NotFound } from '../not-found';
 import BootstrapComponents from './bootstrap';
 import CoreComponents from './core';
 import IntlComponents from './intl';
