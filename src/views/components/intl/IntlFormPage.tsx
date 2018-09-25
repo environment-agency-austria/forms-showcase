@@ -1,13 +1,14 @@
-import React from 'react';
+import * as React from 'react';
 
-import ComponentPage from '../shared/ComponentPage';
-import Showcase from '../shared/Showcase';
+import { ComponentPage } from '../shared/ComponentPage';
+import { Showcase } from '../shared/Showcase';
 
+// tslint:disable-next-line:import-name
 import formDemo from './examples/IntlFormExample';
 
 const form = require('!!raw-loader!./examples/IntlFormExample.js'); // eslint-disable-line
 
-function IntlFormPage() {
+export const IntlFormPage = (): JSX.Element => {
   return (
     <ComponentPage
       title="IntlForm"
@@ -23,6 +24,4 @@ function IntlFormPage() {
       />
     </ComponentPage>
   );
-}
-
-export default IntlFormPage;
+};

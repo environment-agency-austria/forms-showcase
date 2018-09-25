@@ -1,10 +1,10 @@
-import React from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom';
+import * as React from 'react';
+import { Redirect, Route, Switch } from 'react-router-dom';
 
-import IntlFormPage from './IntlFormPage';
-import NotFound from '../../not-found';
+import { NotFound } from '../../not-found';
+import { IntlFormPage } from './IntlFormPage';
 
-function Intl() {
+export const Intl = (): JSX.Element => {
   return (
     <Switch>
       <Route path="/components/intl/intl-form" component={IntlFormPage} />
@@ -12,6 +12,4 @@ function Intl() {
       <Route path="*" component={NotFound} />
     </Switch>
   );
-}
-
-export default Intl;
+};
