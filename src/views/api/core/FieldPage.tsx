@@ -1,4 +1,5 @@
-import React from 'react';
+import * as React from 'react';
+
 import { Link } from 'react-router-dom';
 
 import ApiPage from '../shared/ApiPage';
@@ -6,7 +7,8 @@ import PropInfo from '../shared/PropInfo';
 
 const introExample = require('!!raw-loader!./examples/Field.js'); // eslint-disable-line
 
-function FieldPage() {
+// tslint:disable-next-line:max-func-body-length
+export const FieldPage = (): JSX.Element => {
   return (
     <ApiPage
       title="Field"
@@ -145,6 +147,4 @@ function FieldPage() {
       <p>Please refer to the <Link to="../input">Input</Link> API documentation for further information.</p>
     </ApiPage>
   );
-}
-
-export default FieldPage;
+};

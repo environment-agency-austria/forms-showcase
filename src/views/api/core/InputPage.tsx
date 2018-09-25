@@ -1,4 +1,6 @@
-import React from 'react';
+import * as React from 'react';
+
+// tslint:disable-next-line:import-name
 import PrismCode from 'react-prism';
 import { Link } from 'react-router-dom';
 
@@ -9,7 +11,8 @@ const introExample = require('!!raw-loader!./examples/Input.js'); // eslint-disa
 const customInputExample = require('!!raw-loader!./examples/CustomInput.js'); // eslint-disable-line
 const customInputUsageExample = require('!!raw-loader!./examples/CustomInputUsage.js'); // eslint-disable-line
 
-function FieldPage() {
+// tslint:disable-next-line:max-func-body-length
+export const InputPage = (): JSX.Element => {
   return (
     <ApiPage
       title="Input"
@@ -115,6 +118,4 @@ function FieldPage() {
       <PrismCode className="lang-jsx" component="pre">{customInputUsageExample}</PrismCode>
     </ApiPage>
   );
-}
-
-export default FieldPage;
+};

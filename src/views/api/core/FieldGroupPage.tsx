@@ -1,4 +1,5 @@
-import React from 'react';
+import * as React from 'react';
+
 import { Link } from 'react-router-dom';
 
 import ApiPage from '../shared/ApiPage';
@@ -6,7 +7,7 @@ import PropInfo from '../shared/PropInfo';
 
 const introExample = require('!!raw-loader!./examples/FieldGroup.js'); // eslint-disable-line
 
-function FieldPage() {
+export const FieldGroupPage = (): JSX.Element => {
   return (
     <ApiPage
       title="FieldGroup"
@@ -92,6 +93,4 @@ function FieldPage() {
       <p>The <mark>FieldGroup</mark> doesn't emit any events.</p>
     </ApiPage>
   );
-}
-
-export default FieldPage;
+};

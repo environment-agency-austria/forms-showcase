@@ -1,11 +1,11 @@
-import React from 'react';
+import * as React from 'react';
 
 import ApiPage from '../shared/ApiPage';
 import PropInfo from '../shared/PropInfo';
 
 const introExample = require('!!raw-loader!./examples/FormButton.js'); // eslint-disable-line
 
-function FieldPage() {
+export const FormButtonPage = (): JSX.Element => {
   return (
     <ApiPage
       title="FormButton"
@@ -42,6 +42,4 @@ function FieldPage() {
       <p>The <mark>FormButton</mark> doesn't emit any events.</p>
     </ApiPage>
   );
-}
-
-export default FieldPage;
+};

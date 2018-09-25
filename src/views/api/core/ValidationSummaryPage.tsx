@@ -1,11 +1,11 @@
-import React from 'react';
+import * as React from 'react';
 
 import ApiPage from '../shared/ApiPage';
 import PropInfo from '../shared/PropInfo';
 
 const introExample = require('!!raw-loader!./examples/ValidationSummary.js'); // eslint-disable-line
 
-function FieldPage() {
+export const ValidationSummaryPage = (): JSX.Element => {
   return (
     <ApiPage
       title="ValidationSummary"
@@ -75,6 +75,4 @@ function FieldPage() {
       <p>The <mark>ValidationSummary</mark> doesn't emit any events.</p>
     </ApiPage>
   );
-}
-
-export default FieldPage;
+};

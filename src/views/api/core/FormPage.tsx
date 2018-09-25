@@ -1,4 +1,6 @@
-import React from 'react';
+import * as React from 'react';
+
+// tslint:disable-next-line:import-name
 import PrismCode from 'react-prism';
 import { Link } from 'react-router-dom';
 
@@ -8,7 +10,8 @@ import PropInfo from '../shared/PropInfo';
 const introExample = require('!!raw-loader!./examples/Form.js'); // eslint-disable-line
 const valuesExample = require('!!raw-loader!./examples/ValuesExample.js'); // eslint-disable-line
 
-function FormPage() {
+// tslint:disable-next-line:max-func-body-length
+export const FormPage = (): JSX.Element => {
   return (
     <ApiPage
       title="Form"
@@ -140,6 +143,4 @@ function FormPage() {
       </PropInfo>
     </ApiPage>
   );
-}
-
-export default FormPage;
+};

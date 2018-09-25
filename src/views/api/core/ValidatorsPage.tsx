@@ -1,4 +1,6 @@
-import React from 'react';
+import * as React from 'react';
+
+// tslint:disable-next-line:import-name
 import PrismCode from 'react-prism';
 import { Link } from 'react-router-dom';
 
@@ -13,7 +15,8 @@ const customValidatorExample = require('!!raw-loader!./examples/CustomValidator.
 const customAsyncValidatorExample = require('!!raw-loader!./examples/CustomAsyncValidator.js'); // eslint-disable-line
 const customFormValidatorExample = require('!!raw-loader!./examples/CustomFormValidator.js'); // eslint-disable-line
 
-function FieldPage() {
+// tslint:disable-next-line:max-func-body-length
+export const ValidatorsPage = (): JSX.Element => {
   return (
     <ApiPage
       title="Validators"
@@ -227,6 +230,4 @@ function FieldPage() {
       </PropInfo>
     </ApiPage>
   );
-}
-
-export default FieldPage;
+};

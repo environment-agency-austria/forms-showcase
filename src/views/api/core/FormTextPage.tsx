@@ -1,11 +1,11 @@
-import React from 'react';
+import * as React from 'react';
 
 import ApiPage from '../shared/ApiPage';
 import PropInfo from '../shared/PropInfo';
 
 const introExample = require('!!raw-loader!./examples/FormText.js'); // eslint-disable-line
 
-function FormTextPage() {
+export const FormTextPage = (): JSX.Element => {
   return (
     <ApiPage
       title="FormText"
@@ -27,6 +27,4 @@ function FormTextPage() {
       </PropInfo>
     </ApiPage>
   );
-}
-
-export default FormTextPage;
+};
