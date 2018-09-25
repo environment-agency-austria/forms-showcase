@@ -3,14 +3,12 @@ import * as React from 'react';
 import { ComponentPage } from '../shared/ComponentPage';
 import { Showcase } from '../shared/Showcase';
 
-// tslint:disable:import-name
 import defaultValuesDemo from './examples/DefaultValues';
 import disabledDemo from './examples/DisabledForm';
 import formValidationDemo from './examples/FormValidation';
 import valuesDemo from './examples/FormValues';
 import plaintextDemo from './examples/PlaintextForm';
 import simpleFormDemo from './examples/SimpleForm';
-// tslint:enable:import-name
 
 import DefaultValuesJs from '!!raw-loader!./examples/DefaultValues.js';
 import DisabledFormJs from '!!raw-loader!./examples/DisabledForm.js';

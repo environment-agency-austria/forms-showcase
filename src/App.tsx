@@ -5,9 +5,7 @@ import { Collapse, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } f
 // tslint:disable-next-line:no-import-side-effect
 import 'babel-polyfill';
 
-// tslint:disable-next-line:no-submodule-imports
 import 'bootstrap/dist/css/bootstrap.css';
-// tslint:disable-next-line:no-submodule-imports no-implicit-dependencies
 import 'react-datetime/css/react-datetime.css';
 
 import * as Prism from 'prismjs';

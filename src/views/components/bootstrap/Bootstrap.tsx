@@ -1,9 +1,7 @@
 import * as React from 'react';
 
-// tslint:disable-next-line:ordered-imports
-import { Switch, Route, Redirect } from 'react-router-dom';
+import { Redirect, Route, Switch } from 'react-router-dom';
 
-// tslint:disable-next-line:no-submodule-imports
 import 'react-ocean-forms-bootstrap/build/main.css';
 
 import { NotFound } from '../../not-found';
