@@ -1,4 +1,5 @@
-import React from 'react';
+import * as React from 'react';
+
 import { Link } from 'react-router-dom';
 
 import ApiPage from '../shared/ApiPage';
@@ -6,7 +7,7 @@ import PropInfo from '../shared/PropInfo';
 
 const introExample = require('!!raw-loader!./examples/Select.js'); // eslint-disable-line
 
-function SelectPage() {
+export const SelectPage = (): JSX.Element => {
   return (
     <ApiPage
       title="Select"
@@ -39,6 +40,4 @@ function SelectPage() {
       <p>See <Link to="../../core/field">Field</Link> for event handling.</p>
     </ApiPage>
   );
-}
-
-export default SelectPage;
+};

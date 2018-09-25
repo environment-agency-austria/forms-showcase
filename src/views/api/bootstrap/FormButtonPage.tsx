@@ -1,11 +1,12 @@
-import React from 'react';
+import * as React from 'react';
+
 import { Link } from 'react-router-dom';
 
 import ApiPage from '../shared/ApiPage';
 
 const introExample = require('!!raw-loader!./examples/FormButton.js'); // eslint-disable-line
 
-function FieldPage() {
+export const FormButtonPage = (): JSX.Element => {
   return (
     <ApiPage
       title="FormButton"
@@ -18,11 +19,10 @@ function FieldPage() {
       <p>
         This component is just a wrapper for reactstrap buttons as a custom element inside
         the <Link to="../../core/form-button">Core Form-Button</Link>. It will pass all props
-        to the underlying button. Please refer to the <a href="http://reactstrap.github.io/components/buttons/">reactstrap documentation</a> and
+        to the underlying button. Please refer to
+        the <a href="http://reactstrap.github.io/components/buttons/">reactstrap documentation</a> and
         the Form-Button documentation for the available props.
       </p>
     </ApiPage>
   );
-}
-
-export default FieldPage;
+};

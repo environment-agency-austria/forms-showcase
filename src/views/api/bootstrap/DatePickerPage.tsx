@@ -1,4 +1,5 @@
-import React from 'react';
+import * as React from 'react';
+
 import { Link } from 'react-router-dom';
 
 import ApiPage from '../shared/ApiPage';
@@ -6,7 +7,7 @@ import PropInfo from '../shared/PropInfo';
 
 const introExample = require('!!raw-loader!./examples/DatePicker.js'); // eslint-disable-line
 
-function DatePickerPage() {
+export const DatePickerPage = (): JSX.Element => {
   return (
     <ApiPage
       title="DatePicker"
@@ -40,6 +41,4 @@ function DatePickerPage() {
       <p>See <Link to="../../core/field">Field</Link> for event handling.</p>
     </ApiPage>
   );
-}
-
-export default DatePickerPage;
+};

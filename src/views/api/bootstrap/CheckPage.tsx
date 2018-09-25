@@ -1,12 +1,13 @@
-import React from 'react';
+import * as React from 'react';
+
 import { Link } from 'react-router-dom';
 
 import ApiPage from '../shared/ApiPage';
 import PropInfo from '../shared/PropInfo';
 
-const introExample = require('!!raw-loader!./examples/Check.js'); // eslint-disable-line
+const introExample = require('!!raw-loader!./examples/Check.js');
 
-function CheckPage() {
+export const CheckPage = (): JSX.Element => {
   return (
     <ApiPage
       title="Check"
@@ -26,6 +27,4 @@ function CheckPage() {
       <p>See <Link to="../../core/field">Field</Link> for event handling.</p>
     </ApiPage>
   );
-}
-
-export default CheckPage;
+};
