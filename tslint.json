@@ -1,5 +1,6 @@
 {
   "extends": ["tslint-eaa-contrib"],
+  "defaultSeverity": "warning",
   "linterOptions": {
     "exclude": [
       "config/**/*.js",
