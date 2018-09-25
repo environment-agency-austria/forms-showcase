@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import { Link } from 'react-router-dom';
 
-import ApiPage from '../shared/ApiPage';
+import { ApiPage } from '../shared/ApiPage';
 
 const introExample = require('!!raw-loader!./examples/IntlForm.js'); // eslint-disable-line
 

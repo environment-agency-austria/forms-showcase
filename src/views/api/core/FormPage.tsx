@@ -4,8 +4,8 @@ import * as React from 'react';
 import PrismCode from 'react-prism';
 import { Link } from 'react-router-dom';
 
-import ApiPage from '../shared/ApiPage';
-import PropInfo from '../shared/PropInfo';
+import { ApiPage } from '../shared/ApiPage';
+import { PropInfo } from '../shared/PropInfo';
 
 const introExample = require('!!raw-loader!./examples/Form.js'); // eslint-disable-line
 const valuesExample = require('!!raw-loader!./examples/ValuesExample.js'); // eslint-disable-line
