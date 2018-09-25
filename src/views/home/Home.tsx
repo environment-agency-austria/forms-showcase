@@ -1,11 +1,14 @@
-import React from 'react';
-import { Jumbotron } from 'reactstrap';
+import * as  React from 'react';
+
+// tslint:disable-next-line:import-name
 import PrismCode from 'react-prism';
 import { Link } from 'react-router-dom';
+import { Jumbotron } from 'reactstrap';
 
-const GettingStartedExample = require('!!raw-loader!./examples/GettingStarted.js'); // eslint-disable-line
+// tslint:disable-next-line:no-var-requires
+const gettingStartedExample = require('!!raw-loader!./examples/GettingStarted.js');
 
-function Home() {
+export const Home = (): JSX.Element => {
   return (
     <div className="page">
       <Jumbotron>
@@ -13,9 +16,13 @@ function Home() {
         <p className="lead">Flexible and lightweight framework for rendering and validating forms with React.</p>
         <hr />
         <p>
-          <a href="https://www.npmjs.com/package/react-ocean-forms"><img src="https://img.shields.io/npm/v/react-ocean-forms.svg" alt="Npm version" /></a>
+          <a href="https://www.npmjs.com/package/react-ocean-forms">
+            <img src="https://img.shields.io/npm/v/react-ocean-forms.svg" alt="Npm version" />
+          </a>
           {' '}
-          <a href="https://github.com/environment-agency-austria/react-ocean-forms/blob/master/LICENSE"><img src="https://img.shields.io/github/license/environment-agency-austria/react-ocean-forms.svg" alt="License" /></a>
+          <a href="https://github.com/environment-agency-austria/react-ocean-forms/blob/master/LICENSE">
+            <img src="https://img.shields.io/github/license/environment-agency-austria/react-ocean-forms.svg" alt="License" />
+          </a>
         </p>
       </Jumbotron>
 
@@ -52,10 +59,8 @@ function Home() {
       <p>
         After adding the react-ocean-forms package(s) to your project, you can simply import the components you need.
       </p>
-      <PrismCode className="lang-jsx" component="pre">{GettingStartedExample}</PrismCode>
+      <PrismCode className="lang-jsx" component="pre">{gettingStartedExample}</PrismCode>
       <p>For further documentation head to the <Link to="/components">components</Link> section.</p>
     </div>
   );
-}
-
-export default Home;
+};
