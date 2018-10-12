@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Field, Input } from 'react-ocean-forms';
+import { Form, Input } from 'react-ocean-forms';
 
 function Example({ logMessage }) {
   const getDisplayValue = (value, meta) => {
@@ -30,13 +30,12 @@ function Example({ logMessage }) {
 
   return (
     <Form className="demo" onSubmit={handleSubmit}>
-      <Field
+      <Input
         name="myInput"
         label="Example input"
         getDisplayValue={getDisplayValue}
         getSubmitValue={getSubmitValue}
-        component={Input}
-      />
+        />
 
       <button type="submit">Submit</button>
       <button type="reset">Reset</button>

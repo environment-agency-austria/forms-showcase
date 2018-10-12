@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Field, Input } from 'react-ocean-forms';
+import { Form, Input } from 'react-ocean-forms';
 
 function Example({ logMessage }) {
   const defaultValues = {
@@ -13,8 +13,8 @@ function Example({ logMessage }) {
       defaultValues={defaultValues}
       plaintext
     >
-      <Field name="myInput" label="Example input 1" component={Input} />
-      <Field name="myInput2" label="Example input 2" component={Input} />
+      <Input name="myInput" label="Example input 1" />
+      <Input name="myInput2" label="Example input 2" />
     </Form>
   );
 }

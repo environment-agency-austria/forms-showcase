@@ -1,36 +1,32 @@
 import React from 'react';
-import { Form, Field } from 'react-ocean-forms';
+import { Form } from 'react-ocean-forms';
 import { Input } from 'react-ocean-forms-bootstrap';
 import { Button } from 'reactstrap';
 
 function Example() {
   return (
     <Form className="demo">
-      <Field
+      <Input
         name="prefixInput"
         label="With Prefix"
-        component={Input}
         prefix="Prefix text"
       />
 
-      <Field
+      <Input
         name="customPrefixInput"
         label="Custom prefix"
-        component={Input}
         prefix={<Button>Prefix</Button>}
       />
 
-      <Field
+      <Input
         name="suffixInput"
         label="With Suffix"
-        component={Input}
         suffix="Suffix text"
       />
 
-      <Field
+      <Input
         name="customSuffixInput"
         label="Custom Suffix"
-        component={Input}
         suffix={<Button>Suffix</Button>}
       />
     </Form>

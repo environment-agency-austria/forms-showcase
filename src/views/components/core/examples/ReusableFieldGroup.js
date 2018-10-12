@@ -1,12 +1,12 @@
 import React from 'react';
-import { Form, FieldGroup, Field, Input } from 'react-ocean-forms';
+import { Form, FieldGroup, Input } from 'react-ocean-forms';
 
 /** Reusable contact person fields */
 function ContactFields() {
   return (
     <React.Fragment>
-      <Field name="first" label="First name" component={Input} />
-      <Field name="last" label="Last name" component={Input} />
+      <Input name="first" label="First name" />
+      <Input name="last" label="Last name" />
     </React.Fragment>
   );
 }

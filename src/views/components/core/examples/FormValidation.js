@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Field, Input, ValidationSummary } from 'react-ocean-forms';
+import { Form, Input, ValidationSummary } from 'react-ocean-forms';
 
 function Example({ logMessage }) {
   // Submit callback, here you'd make your api calls
@@ -32,7 +32,7 @@ function Example({ logMessage }) {
     >
       <ValidationSummary id="summary" />
 
-      <Field name="demoInput" label="Example input" component={Input} />
+      <Input name="demoInput" label="Example input" />
 
       <button type="submit">Submit</button>
       <button type="reset">Reset</button>

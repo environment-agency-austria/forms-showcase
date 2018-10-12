@@ -1,4 +1,4 @@
-import { Form, Field, Input } from 'react-ocean-forms';
+import { Form, Input } from 'react-ocean-forms';
 
 const myValidator = (values) => {
   if (values.first === 'John' && values.last === 'Doe') {
@@ -14,6 +14,6 @@ const myValidator = (values) => {
 };
 
 <Form onValidate={myValidator}>
-  <Field name="first" label="First name" component={Input} />
-  <Field name="last" label="Last name" component={Input} />
+  <Input name="first" label="First name" />
+  <Input name="last" label="Last name" />
 </Form>

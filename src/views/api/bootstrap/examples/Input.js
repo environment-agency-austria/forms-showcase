@@ -1,8 +1,6 @@
-import { Field } from 'react-ocean-forms';
 import { Input } from 'react-ocean-forms-bootstrap';
 
-<Field
+<Input
   name="demo"
   label="lbl_demo"
-  component={Input}
-/>
+  />

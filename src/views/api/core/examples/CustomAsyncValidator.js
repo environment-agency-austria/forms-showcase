@@ -1,4 +1,4 @@
-import { Field, Input } from 'react-ocean-forms';
+import { Input } from 'react-ocean-forms';
 import { CustomApi } from './myCustomApi';
 
 const myValidator = async (value) => {
@@ -10,9 +10,8 @@ const myValidator = async (value) => {
   return 'Invalid value';
 };
 
-<Field
+<Input
   name="demo"
   label="lbl_demo"
-  component={Input}
   asyncValidators={[myValidator]}
 />

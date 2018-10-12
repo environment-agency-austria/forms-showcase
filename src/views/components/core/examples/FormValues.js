@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Field, Input } from 'react-ocean-forms';
+import { Form, Input } from 'react-ocean-forms';
 
 class Example extends React.Component {
   state = {
@@ -32,7 +32,7 @@ class Example extends React.Component {
         onSubmit={this.handleSubmit}
         values={values}
       >
-        <Field name="myInput" label="Example input" component={Input} />
+        <Input name="myInput" label="Example input" />
 
         <button type="submit">Submit</button>
         <button type="reset">Reset</button>

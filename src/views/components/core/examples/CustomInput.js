@@ -1,10 +1,10 @@
 import React from 'react';
-import { Form, Field } from 'react-ocean-forms';
+import { Form, withField } from 'react-ocean-forms';
 
 /**
  * Simple implementation of a custom input
  */
-function CustomInput(props) {
+function BaseCustomInput(props) {
   const {
     field,
     label,
@@ -26,6 +26,7 @@ function CustomInput(props) {
     </div>
   );
 }
+const CustomInput = withField(BaseCustomInput);
 
 function Example({ logMessage }) {
   // Submit callback, here you'd make your api calls
@@ -45,12 +46,11 @@ function Example({ logMessage }) {
 
   return (
     <Form className="demo" onSubmit={handleSubmit}>
-      <Field
+      <CustomInput
         name="myCustomInput"
         label="Input with info text"
         onChange={handleChange}
         onBlur={handleBlur}
-        component={CustomInput}
         customProp="custom text"
       />
 

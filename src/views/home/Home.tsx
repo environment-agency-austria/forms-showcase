@@ -4,6 +4,9 @@ import PrismCode from 'react-prism';
 import { Link } from 'react-router-dom';
 import { Jumbotron } from 'reactstrap';
 
+// import { Form } from 'react-ocean-forms';
+// import { FormButton, Input, OnOffToggleButton, Check, DatePicker } from 'react-ocean-forms-bootstrap';
+
 import GettingStartedJs from '!!raw-loader!./examples/GettingStarted.js';
 
 export const Home = (): JSX.Element => {
@@ -48,6 +51,12 @@ export const Home = (): JSX.Element => {
         the <a href="https://github.com/environment-agency-austria/react-ocean-forms-react-intl">react-ocean-forms-react-intl</a> package
         for react-intl support.
       </p>
+
+      {/* <Form>
+        <div>
+          <FormButton>Submit</FormButton>
+        </div>
+      </Form> */}
 
       <h2 className="mt-4">Getting started</h2>
       <p>

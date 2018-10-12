@@ -1,27 +1,24 @@
 import React from 'react';
-import { Form, Field, validators } from 'react-ocean-forms';
+import { Form, validators } from 'react-ocean-forms';
 import { Input } from 'react-ocean-forms-bootstrap';
 
 function Example() {
   return (
     <Form className="demo" plaintext>
-      <Field
+      <Input
         name="myInput"
         label="Normal input"
-        component={Input}
-      />
+        />
 
-      <Field
+      <Input
         name="requiredInput"
         label="Required input"
-        component={Input}
         validators={[validators.required]}
       />
 
-      <Field
+      <Input
         name="infoInput"
         label="Info input"
-        component={Input}
         info="Custom info text!"
       />
     </Form>

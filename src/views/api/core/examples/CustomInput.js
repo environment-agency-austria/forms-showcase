@@ -1,5 +1,5 @@
 import React from 'react';
-import { fieldMetaShape, fieldShape } from 'react-ocean-forms';
+import { withField } from 'react-ocean-forms';
 
 function CustomInput(props) {
   const { field, meta } = props;
@@ -14,4 +14,4 @@ function CustomInput(props) {
   );
 }
 
-export default CustomInput;
+export default withField(CustomInput);

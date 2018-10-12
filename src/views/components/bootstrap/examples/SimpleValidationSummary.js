@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Field, validators } from 'react-ocean-forms';
+import { Form, validators } from 'react-ocean-forms';
 import { Input, ValidationSummary } from 'react-ocean-forms-bootstrap';
 
 function Example() {
@@ -7,10 +7,9 @@ function Example() {
     <Form className="demo">
       <ValidationSummary id="demoSummary" />
 
-      <Field
+      <Input
         name="requiredInput"
         label="Required input"
-        component={Input}
         validators={[validators.required]}
       />
 

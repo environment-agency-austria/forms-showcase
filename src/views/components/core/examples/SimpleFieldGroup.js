@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, FieldGroup, Field, Input } from 'react-ocean-forms';
+import { Form, FieldGroup, Input } from 'react-ocean-forms';
 
 function Example({ logMessage }) {
   // Submit callback, here you'd make your api calls
@@ -27,8 +27,8 @@ function Example({ logMessage }) {
         render={() => {
           return (
             <React.Fragment>
-              <Field name="myInput1" label="Example input" component={Input} />
-              <Field name="myInput2" label="Example input 2" component={Input} />
+              <Input name="myInput1" label="Example input" />
+              <Input name="myInput2" label="Example input 2" />
             </React.Fragment>
           );
         }}

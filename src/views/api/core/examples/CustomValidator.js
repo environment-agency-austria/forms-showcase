@@ -1,12 +1,11 @@
-import { Field, Input } from 'react-ocean-forms';
+import { Input } from 'react-ocean-forms';
 
 const myValidator = (value) => {
   return value === 'OK' ? undefined : 'Value is not OK!';
 };
 
-<Field
+<Input
   name="demo"
   label="lbl_demo"
-  component={Input}
   validators={[myValidator]}
 />

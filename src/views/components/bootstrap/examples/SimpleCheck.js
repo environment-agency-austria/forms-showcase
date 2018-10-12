@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Field } from 'react-ocean-forms';
+import { Form } from 'react-ocean-forms';
 import { Check } from 'react-ocean-forms-bootstrap';
 
 function Example({ logMessage }) {
@@ -15,13 +15,12 @@ function Example({ logMessage }) {
 
   return (
     <Form className="demo">
-      <Field
+      <Check
         name="check"
         label="Sample checkbox"
         onChange={handleChange}
         onBlur={handleBlur}
-        component={Check}
-      />
+        />
     </Form>
   );
 }
