@@ -8,9 +8,8 @@ import 'babel-polyfill';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'react-datetime/css/react-datetime.css';
 
-import * as Prism from 'prismjs';
-// tslint:disable-next-line:no-console
-console.log(Prism.highlightElement);
+import { initializePrismJs } from './Prism';
+initializePrismJs();
 
 import { Api } from './views/api';
 import { Components } from './views/components';
