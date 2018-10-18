@@ -35,6 +35,12 @@ function SelectPage() {
         want to use any i18n features you can pass a raw message instead.
       </PropInfo>
 
+      <PropInfo name="defaultValue" type="Object:{ label: 'Option 2', value: 2 }">
+        Value that will be displayed initially. You can initialize this value before rendering. You have to initialize 
+        with an object like in options. If you use defaultValue you need not use property value.
+      </PropInfo>
+
+
       <h2>Events</h2>
       <p>See <Link to="../../core/field">Field</Link> for event handling.</p>
     </ApiPage>
