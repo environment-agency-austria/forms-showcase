@@ -1,5 +1,5 @@
 # React Ocean Forms Documentation and Showcase
-[![travis](https://travis-ci.com/environment-agency-austria/forms-showcase.svg?branch=master)](https://travis-ci.com/environment-agency-austria/forms-showcase)
+[![travis](https://travis-ci.com/environment-agency-austria/forms-showcase.svg?branch=master)](https://travis-ci.com/environment-agency-austria/forms-showcase) [![Greenkeeper badge](https://badges.greenkeeper.io/environment-agency-austria/forms-showcase.svg)](https://greenkeeper.io/)
 
 This repository contains the api documentation and showcases for the following packages:
 
