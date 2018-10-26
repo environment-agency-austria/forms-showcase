@@ -1,6 +1,15 @@
 {
-  "main.css": "static/css/main.46bab58e.css",
-  "main.css.map": "static/css/main.46bab58e.css.map",
-  "main.js": "static/js/main.95f09c9f.js",
-  "main.js.map": "static/js/main.95f09c9f.js.map"
+  "main.css": "/forms-showcase/static/css/main.29340c75.chunk.css",
+  "main.js": "/forms-showcase/static/js/main.f899649b.chunk.js",
+  "main.js.map": "/forms-showcase/static/js/main.f899649b.chunk.js.map",
+  "static/css/1.38a5bf79.chunk.css": "/forms-showcase/static/css/1.38a5bf79.chunk.css",
+  "static/js/1.96b2495c.chunk.js": "/forms-showcase/static/js/1.96b2495c.chunk.js",
+  "static/js/1.96b2495c.chunk.js.map": "/forms-showcase/static/js/1.96b2495c.chunk.js.map",
+  "runtime~main.js": "/forms-showcase/static/js/runtime~main.8a36832b.js",
+  "runtime~main.js.map": "/forms-showcase/static/js/runtime~main.8a36832b.js.map",
+  "static/css/1.38a5bf79.chunk.css.map": "/forms-showcase/static/css/1.38a5bf79.chunk.css.map",
+  "static/css/main.29340c75.chunk.css.map": "/forms-showcase/static/css/main.29340c75.chunk.css.map",
+  "index.html": "/forms-showcase/index.html",
+  "precache-manifest.b2af42ed7da93764edee0a1ae0db554f.js": "/forms-showcase/precache-manifest.b2af42ed7da93764edee0a1ae0db554f.js",
+  "service-worker.js": "/forms-showcase/service-worker.js"
 }
