@@ -89,6 +89,10 @@ export const InputPage = (): JSX.Element => {
             True if the input is currently validated by an asynchronous validator. Useful for displaying
             e.g. spinner to indicate that a background task is active.
           </dd>
+          <dt className="col-sm-3">isRequired <span className="text-info font-weight-normal font-italic">(Boolean)</span></dt>
+          <dd className="col-sm-9">
+            True if the input has a required validator attached.
+          </dd>
           <dt className="col-sm-3">touched <span className="text-info font-weight-normal font-italic">(Boolean)</span></dt>
           <dd className="col-sm-9">
             True if the input has been touched since loading.
