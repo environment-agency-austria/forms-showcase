@@ -1,22 +1,20 @@
 import React from 'react';
-import { Form, Field, Input, ValidationSummary, validators } from 'react-ocean-forms';
+import { Form, Input, ValidationSummary, validators } from 'react-ocean-forms';
 
 function Example({ logMessage }) {
   return (
     <Form className="demo">
       <ValidationSummary id="summary" />
 
-      <Field
+      <Input
         name="input1"
         label="Example input 1"
-        component={Input}
         validators={[validators.required]}
       />
 
-      <Field
+      <Input
         name="input2"
         label="Example input 2"
-        component={Input}
         validators={[validators.required]}
       />
 

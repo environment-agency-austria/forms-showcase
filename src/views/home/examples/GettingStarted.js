@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Field, Input } from 'react-ocean-forms';
+import { Form, Input } from 'react-ocean-forms';
 
 class GettingStarted extends React.Component {
   handleSubmit(values) {
@@ -9,7 +9,7 @@ class GettingStarted extends React.Component {
   render() {
     return (
       <Form onSubmit={this.handleSubmit}>
-        <Field name="myInput" label="Example input" component={Input} />
+        <Input name="myInput" label="Example input" />
         <button type="submit">Submit</button>
       </Form>
     );

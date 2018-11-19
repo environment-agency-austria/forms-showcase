@@ -1,4 +1,3 @@
-import { Field } from 'react-ocean-forms';
 import { Select } from 'react-ocean-forms-bootstrap';
 
 const options = [
@@ -6,9 +5,8 @@ const options = [
   { label: 'Option 2', value: 2 },
 ];
 
-<Field
+<Select
   name="demo"
   label="lbl_demo"
-  component={Select}
   options={options}
 />

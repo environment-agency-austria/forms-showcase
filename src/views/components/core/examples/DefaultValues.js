@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Field, Input } from 'react-ocean-forms';
+import { Form, Input } from 'react-ocean-forms';
 
 class Example extends React.Component {
   state = {
@@ -31,7 +31,7 @@ class Example extends React.Component {
         onSubmit={this.handleSubmit}
         defaultValues={defaultValues}
       >
-        <Field name="myInput" label="Example input" component={Input} />
+        <Input name="myInput" label="Example input" />
 
         <p className="mt-4">
           Current default value: {defaultValues.myInput}

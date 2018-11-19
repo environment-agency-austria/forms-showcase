@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Field, validators } from 'react-ocean-forms';
+import { Form, validators } from 'react-ocean-forms';
 import { Select } from 'react-ocean-forms-bootstrap';
 
 function Example({ logMessage }) {
@@ -20,21 +20,19 @@ function Example({ logMessage }) {
 
   return (
     <Form className="demo">
-      <Field
+      <Select
         name="myInput"
         label="Normal input"
         onChange={handleChange}
         onBlur={handleBlur}
-        component={Select}
         options={options}
       />
 
-      <Field
+      <Select
         name="requiredInput"
         label="Required input"
         onChange={handleChange}
         onBlur={handleBlur}
-        component={Select}
         validators={[validators.required]}
         options={options}
       />

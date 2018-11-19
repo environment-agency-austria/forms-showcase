@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Field } from 'react-ocean-forms';
+import { Form } from 'react-ocean-forms';
 import { DatePicker } from 'react-ocean-forms-bootstrap';
 
 function Example({ logMessage }) {
@@ -15,21 +15,19 @@ function Example({ logMessage }) {
 
   return (
     <Form className="demo">
-      <Field
+      <DatePicker
         name="datePicker"
         label="Sample date picker"
         onChange={handleChange}
         onBlur={handleBlur}
-        component={DatePicker}
         dateFormat="DD.MM.YYYY"
       />
 
-      <Field
+      <DatePicker
         name="timePicker"
         label="Sample time picker"
         onChange={handleChange}
         onBlur={handleBlur}
-        component={DatePicker}
         timeFormat="HH:mm"
       />
     </Form>

@@ -1,9 +1,9 @@
 import React from 'react';
 import { IntlProvider, FormattedMessage, addLocaleData } from 'react-intl';
 import deLocaleData from 'react-intl/locale-data/de';
-import IntlFrom from 'react-ocean-forms-react-intl';
+import { IntlForm } from 'react-ocean-forms-react-intl';
 import { Button } from 'reactstrap';
-import { Field, validators, FormText } from 'react-ocean-forms';
+import { validators, FormText } from 'react-ocean-forms';
 import { Input, FormButton } from 'react-ocean-forms-bootstrap';
 
 class Example extends React.Component {
@@ -36,7 +36,7 @@ class Example extends React.Component {
 
     return (
       <IntlProvider locale={locale} messages={this.messages[locale]}>
-        <IntlFrom className="demo">
+        <IntlForm className="demo">
           <p>
             <Button
               className="mr-2"
@@ -52,17 +52,15 @@ class Example extends React.Component {
             </Button>
           </p>
 
-          <Field
+          <Input
             name="name"
             label="lblName"
-            component={Input}
             validators={[validators.required]}
           />
-          <Field
+          <Input
             name="mail"
             label="lblMail"
-            component={Input}
-          />
+            />
 
           <p>
             <FormText text="customText" />
@@ -74,7 +72,7 @@ class Example extends React.Component {
           <FormButton type="reset">
             <FormattedMessage id="reset" />
           </FormButton>
-        </IntlFrom>
+        </IntlForm>
       </IntlProvider>
     );
   }

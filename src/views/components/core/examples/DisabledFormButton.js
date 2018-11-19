@@ -1,14 +1,13 @@
 import React from 'react';
-import { Form, Field, Input, FormButton } from 'react-ocean-forms';
+import { Form, Input, FormButton } from 'react-ocean-forms';
 
 function Example() {
   return (
     <Form className="demo" disabled>
-      <Field
+      <Input
         name="input"
         label="Sample input"
-        component={Input}
-      />
+        />
 
       <FormButton type="submit">Submit</FormButton>
       <FormButton type="reset">Reset</FormButton>

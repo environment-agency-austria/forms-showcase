@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Field, Input } from 'react-ocean-forms';
+import { Form, Input } from 'react-ocean-forms';
 
 function Example({ logMessage }) {
   // onChange callback
@@ -14,13 +14,12 @@ function Example({ logMessage }) {
 
   return (
     <Form className="demo">
-      <Field
+      <Input
         name="myInput"
         label="Example input"
         onChange={handleChange}
         onBlur={handleBlur}
-        component={Input}
-      />
+        />
     </Form>
   );
 }

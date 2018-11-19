@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Field, Input, FormButton } from 'react-ocean-forms';
+import { Form, Input, FormButton } from 'react-ocean-forms';
 
 function asyncValidator(value) {
   return new Promise(function(resolve) {
@@ -16,10 +16,9 @@ function asyncValidator(value) {
 function Example({ logMessage }) {
   return (
     <Form className="demo">
-      <Field
+      <Input
         name="input"
         label="Sample input"
-        component={Input}
         asyncValidators={[asyncValidator]}
       />
 

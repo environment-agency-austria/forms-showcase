@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Field, Input } from 'react-ocean-forms';
+import { Form, Input } from 'react-ocean-forms';
 
 function Example({ logMessage }) {
   // Submit callback, here you'd make your api calls
@@ -18,7 +18,7 @@ function Example({ logMessage }) {
       onSubmit={handleSubmit}
       onReset={handleReset}
     >
-      <Field name="myInput" label="Example input" component={Input} />
+      <Input name="myInput" label="Example input" />
       <button type="submit">Submit</button>
       <button type="reset">Reset</button>
     </Form>

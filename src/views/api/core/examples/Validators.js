@@ -1,8 +1,7 @@
-import { Field, Input, validators } from 'react-ocean-forms';
+import { Input, validators } from 'react-ocean-forms';
 
-<Field
+<Input
   name="demo"
   label="lbl_demo"
-  component={Input}
   validators={[validators.required]}
 />
