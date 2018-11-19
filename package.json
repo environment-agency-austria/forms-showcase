@@ -10,7 +10,7 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-ocean-forms": "^1.4.0",
-    "react-ocean-forms-bootstrap": "^1.4.0",
+    "react-ocean-forms-bootstrap": "^2.0.0",
     "react-ocean-forms-react-intl": "^1.3.0",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.0.5",
