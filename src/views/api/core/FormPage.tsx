@@ -128,18 +128,6 @@ export const FormPage = (): JSX.Element => {
         <h6>Arguments</h6>
         <p>None.</p>
       </PropInfo>
-
-      <PropInfo name="onFieldValueChanged" type="Function" deprecated>
-        <p>Triggered when the value of a field changes.</p>
-        <h6>Arguments</h6>
-        <dl className="row">
-        <dt className="col-sm-3">name <span className="text-info font-weight-normal font-italic">(string)</span></dt>
-          <dd className="col-sm-9">Name of the changed field.</dd>
-
-          <dt className="col-sm-3">value <span className="text-info font-weight-normal font-italic">(any)</span></dt>
-          <dd className="col-sm-9">New field value.</dd>
-        </dl>
-      </PropInfo>
     </ApiPage>
   );
 };
