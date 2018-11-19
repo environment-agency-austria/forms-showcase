@@ -7,6 +7,8 @@ cache:
 jobs:
   include:
     - stage: Build
+      env:
+        - CI: false
       script: "yarn build"
 
 deploy:
