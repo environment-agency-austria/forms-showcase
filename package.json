@@ -16,7 +16,7 @@
     "react-dom": "^16.6.3",
     "react-intl": "2.7.2",
     "react-ocean-forms": "^2.0.0",
-    "react-ocean-forms-bootstrap": "^2.0.0",
+    "react-ocean-forms-bootstrap": "^2.1.1",
     "react-ocean-forms-react-intl": "^2.0.0",
     "react-prism": "^4.3.2",
     "react-router-dom": "^4.3.1",
