@@ -58,3 +58,5 @@ export const Home = (): JSX.Element => {
     </div>
   );
 };
+
+export const AsyncPage = Home;

@@ -54,3 +54,5 @@ export const Api = (): JSX.Element => {
     </Row>
   );
 };
+
+export const AsyncPage = Api;

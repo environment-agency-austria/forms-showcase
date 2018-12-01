@@ -8,10 +8,12 @@ import 'babel-polyfill';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'react-datetime/css/react-datetime.css';
 
-import { Api } from './views/api';
-import { Components } from './views/components';
-import { Home } from './views/home';
-import { NotFound } from './views/not-found';
+import { asyncComponent } from './components/asyncComponent';
+
+const asyncApi = asyncComponent(() => import('./views/api'));
+const asyncComponents = asyncComponent(() => import('./views/components'));
+const asyncHome = asyncComponent(() => import('./views/home'));
+const asyncNotFound = asyncComponent(() => import('./views/not-found'));
 
 interface IAppState {
   isOpen: boolean;
@@ -57,10 +59,10 @@ export class App extends React.Component<{}, IAppState> {
 
           <div className="content container">
               <Switch>
-                <Route path="/" exact component={Home} />
-                <Route path="/components" component={Components} />
-                <Route path="/api" component={Api} />
-                <Route path="*" component={NotFound} />
+                <Route path="/" exact component={asyncHome} />
+                <Route path="/components" component={asyncComponents} />
+                <Route path="/api" component={asyncApi} />
+                <Route path="*" component={asyncNotFound} />
               </Switch>
           </div>
         </div>

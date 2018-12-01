@@ -11,3 +11,5 @@ export const NotFound = (): JSX.Element => {
     </React.Fragment>
   );
 };
+
+export const AsyncPage = NotFound;
