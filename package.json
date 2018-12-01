@@ -18,17 +18,15 @@
     "react-ocean-forms": "^2.1.3",
     "react-ocean-forms-bootstrap": "^2.1.2",
     "react-ocean-forms-react-intl": "^2.0.2",
-    "react-prism": "^4.3.2",
     "react-router-dom": "^4.3.1",
-    "react-scripts-ts": "^3.1.0",
     "react-select": "2.1.2",
     "reactstrap": "^6.5.0"
   },
   "scripts": {
-    "start": "react-app-rewired start --scripts-version react-scripts-ts",
-    "build": "react-app-rewired build --scripts-version react-scripts-ts",
-    "test": "react-app-rewired test --scripts-version react-scripts-ts --env=jsdom",
-    "eject": "react-scripts-ts eject",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
@@ -44,7 +42,7 @@
     "babel-plugin-prismjs": "^1.0.2",
     "gh-pages": "^2.0.1",
     "raw-loader": "^0.5.1",
-    "react-app-rewired": "^1.6.2",
+    "react-scripts": "^2.1.1",
     "tslint": "^5.11.0",
     "tslint-consistent-codestyle": "^1.14.1",
     "tslint-eaa-contrib": "^0.1.3",
@@ -52,5 +50,11 @@
     "tslint-react": "^3.6.0",
     "typescript": "^3.1.6"
   },
-  "homepage": "https://environment-agency-austria.github.io/forms-showcase/"
+  "homepage": "https://environment-agency-austria.github.io/forms-showcase/",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
