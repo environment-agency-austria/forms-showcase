@@ -29,8 +29,36 @@ function Example({ logMessage }) {
       />
 
       <Select
+        name="multiInput"
+        label="Multi input"
+        multi
+        onChange={handleChange}
+        onBlur={handleBlur}
+        options={options}
+      />
+
+      <Select
+        name="searchableInput"
+        label="Searchable input"
+        searchable
+        onChange={handleChange}
+        onBlur={handleBlur}
+        options={options}
+      />
+
+      <Select
+        name="clearableInput"
+        label="Clearable input"
+        clearable
+        onChange={handleChange}
+        onBlur={handleBlur}
+        options={options}
+      />
+
+      <Select
         name="requiredInput"
         label="Required input"
+        clearable
         onChange={handleChange}
         onBlur={handleBlur}
         validators={[validators.required]}

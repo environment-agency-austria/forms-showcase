@@ -27,6 +27,14 @@ export const SelectPage = (): JSX.Element => {
         Enable/disable multiselect. See the documentation of <mark>react-select</mark> for further details.
       </PropInfo>
 
+      <PropInfo name="searchable" type="Boolean" defaultValue="true">
+        Enable/disable searchable mode. See the documentation of <mark>react-select</mark> for further details.
+      </PropInfo>
+
+      <PropInfo name="clearable" type="Boolean" defaultValue="false">
+        Enable/disable clearable mode. See the documentation of <mark>react-select</mark> for further details.
+      </PropInfo>
+
       <PropInfo name="placeholder" type="String">
         A placeholder text that will be displayed by the dropdown while nothing is selected.
       </PropInfo>
@@ -37,10 +45,9 @@ export const SelectPage = (): JSX.Element => {
       </PropInfo>
 
       <PropInfo name="defaultValue" type="Object:{ label: 'Option 2', value: 2 }">
-        Value that will be displayed initially. You can initialize this value before rendering. You have to initialize 
+        Value that will be displayed initially. You can initialize this value before rendering. You have to initialize
         with an object like in options. If you use defaultValue you need not use property value.
       </PropInfo>
-
 
       <h2>Events</h2>
       <p>See <Link to="../../core/field">Field</Link> for event handling.</p>
