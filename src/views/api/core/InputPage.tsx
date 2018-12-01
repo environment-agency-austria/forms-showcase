@@ -1,10 +1,11 @@
 import * as React from 'react';
 
-import PrismCode from 'react-prism';
 import { Link } from 'react-router-dom';
 
 import { ApiPage } from '../shared/ApiPage';
 import { PropInfo } from '../shared/PropInfo';
+
+import { SyntaxHighlighter } from '../../../components/SyntaxHighlighter';
 
 import CustomInputJs from '!!raw-loader!./examples/CustomInput.js';
 import CustomInputUsageJs from '!!raw-loader!./examples/CustomInputUsage.js';
@@ -116,9 +117,9 @@ export const InputPage = (): JSX.Element => {
 
       <h5>Example custom input</h5>
       <p>This is an example implentation of a very simple input component.</p>
-      <PrismCode className="lang-jsx" component="pre">{CustomInputJs}</PrismCode>
+      <SyntaxHighlighter code={CustomInputJs} />
       <p>Usage of your custom input:</p>
-      <PrismCode className="lang-jsx" component="pre">{CustomInputUsageJs}</PrismCode>
+      <SyntaxHighlighter code={CustomInputUsageJs} />
     </ApiPage>
   );
 };

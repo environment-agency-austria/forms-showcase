@@ -1,8 +1,9 @@
 import * as React from 'react';
 
-import PrismCode from 'react-prism';
 import { Link } from 'react-router-dom';
 import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
+
+import { SyntaxHighlighter } from '../../../../components/SyntaxHighlighter';
 
 interface IApiPageProps {
   title: string;
@@ -62,7 +63,7 @@ export class ApiPage extends React.Component<IApiPageProps> {
           {' '}{!hideComponentLink && <Link to={`/components/${parent}/${componentLink}`}>(go to Showcase)</Link>}
         </h1>
         <p>{description}</p>
-        <PrismCode className="lang-jsx" component="pre">{codeExample}</PrismCode>
+        <SyntaxHighlighter code={codeExample} />
 
         {children}
       </div>

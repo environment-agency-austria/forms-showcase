@@ -8,9 +8,6 @@ import 'babel-polyfill';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'react-datetime/css/react-datetime.css';
 
-import { initializePrismJs } from './Prism';
-initializePrismJs();
-
 import { Api } from './views/api';
 import { Components } from './views/components';
 import { Home } from './views/home';

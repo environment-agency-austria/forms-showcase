@@ -11,8 +11,16 @@
   },
   "rules": {
     "no-import-side-effect": [true, {"ignore-module": "(\\.html|\\.css)$"}],
-    "no-submodule-imports": [true, "!!raw-loader!.", "bootstrap/dist/css", "react-datetime/css", "react-ocean-forms-bootstrap/build"],
+    "no-submodule-imports": [
+      true,
+      "!!raw-loader!.",
+      "bootstrap/dist/css",
+      "react-datetime/css",
+      "react-ocean-forms-bootstrap/build",
+      "react-syntax-highlighter/languages/prism",
+      "react-syntax-highlighter/styles/prism"
+    ],
     "no-implicit-dependencies": [true, ["!!raw-loader!.", "react-datetime"]],
-    "import-name": [true, {"*/examples*/": "*", "react-prism": "PrismCode"}]
+    "import-name": [true, {"*/examples*/": "*"}]
   }
 }
