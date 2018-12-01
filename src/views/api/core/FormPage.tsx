@@ -60,6 +60,10 @@ export const FormPage = (): JSX.Element => {
         This is useful to re-use Fields in a check page.
       </PropInfo>
 
+      <PropInfo name="resetOnSubmit" type="Boolean" defaultValue="false">
+        If set to true, the form will trigger a form reset after a successful submit.
+      </PropInfo>
+
       <PropInfo name="formatString" type="Function">
         <p>
           If set every text output will be put through this function. Per default an internal
