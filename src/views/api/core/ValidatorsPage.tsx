@@ -1,7 +1,8 @@
 import * as React from 'react';
 
-import PrismCode from 'react-prism';
 import { Link } from 'react-router-dom';
+
+import { SyntaxHighlighter } from '../../../components/SyntaxHighlighter';
 
 import { ApiPage } from '../shared/ApiPage';
 import { PropInfo } from '../shared/PropInfo';
@@ -10,8 +11,8 @@ import CustomAsyncValidatorJs from '!!raw-loader!./examples/CustomAsyncValidator
 import CustomFormValidatorJs from '!!raw-loader!./examples/CustomFormValidator.js';
 import CustomRequiredValidatorJs from '!!raw-loader!./examples/CustomRequiredValidator.js';
 import CustomValidatorJs from '!!raw-loader!./examples/CustomValidator.js';
-import ErrorMessageJs from '!!raw-loader!./examples/ErrorMessage.js';
-import ErrorObjectJs from '!!raw-loader!./examples/ErrorObject.js';
+import ErrorMessageTxt from '!!raw-loader!./examples/ErrorMessage.txt';
+import ErrorObjectTxt from '!!raw-loader!./examples/ErrorObject.txt';
 import ValidatorsJs from '!!raw-loader!./examples/Validators.js';
 import ValidatorsWithParamsJs from '!!raw-loader!./examples/ValidatorsWithParams.js';
 
@@ -130,7 +131,7 @@ export const ValidatorsPage = (): JSX.Element => {
         If a validator needs additional parameters (like <mark>minLength</mark> and <mark>maxLength</mark> do), you
         can use the helper function <mark>validators.withParam</mark>. Example usage to pass the parameter 5 to the minLength validator:
       </p>
-      <PrismCode className="lang-jsx" component="pre">{ValidatorsWithParamsJs}</PrismCode>
+      <SyntaxHighlighter code={ValidatorsWithParamsJs} />
 
       <h2>Writing your own validator</h2>
       <p>You can very easily add your own validation logic by writing custom validation functions.</p>
@@ -171,15 +172,15 @@ export const ValidatorsPage = (): JSX.Element => {
             The field is invalid. An error object can be used instead of a String to be able
             to use message templates. This is useful if you use i18n and message-ids. The
             error object must have the following shape:
-            <PrismCode className="lang-jsx" component="pre">{ErrorObjectJs}</PrismCode>
+            <SyntaxHighlighter code={ErrorObjectTxt} />
             This allows you to write your error message as following:
-            <PrismCode className="lang-jsx" component="pre">{ErrorMessageJs}</PrismCode>
+            <SyntaxHighlighter code={ErrorMessageTxt} />
           </dd>
         </dl>
 
         <h6>Simple example validator</h6>
         <p>Example implementation of an validator that checks if the input is the value 'OK'.</p>
-        <PrismCode className="lang-jsx" component="pre">{CustomValidatorJs}</PrismCode>
+        <SyntaxHighlighter code={CustomValidatorJs} />
       </PropInfo>
 
       <PropInfo name="Custom required validator">
@@ -192,7 +193,7 @@ export const ValidatorsPage = (): JSX.Element => {
 
         <h6>Simple required validator</h6>
         <p>Example implementation of a required validator.</p>
-        <PrismCode className="lang-jsx" component="pre">{CustomRequiredValidatorJs}</PrismCode>
+        <SyntaxHighlighter code={CustomRequiredValidatorJs} />
       </PropInfo>
 
       <PropInfo name="Custom asynchronous validator">
@@ -205,7 +206,7 @@ export const ValidatorsPage = (): JSX.Element => {
 
         <h6>Simple example validator</h6>
         <p>Example implementation of an asynchronous validator that checks the value against an api.</p>
-        <PrismCode className="lang-jsx" component="pre">{CustomAsyncValidatorJs}</PrismCode>
+        <SyntaxHighlighter code={CustomAsyncValidatorJs} />
       </PropInfo>
 
       <PropInfo name="Custom form-wide validator">
@@ -239,7 +240,7 @@ export const ValidatorsPage = (): JSX.Element => {
 
         <h6>Simple example validator</h6>
         <p>Example implementation of an validator that does a validation form-wide.</p>
-        <PrismCode className="lang-jsx" component="pre">{CustomFormValidatorJs}</PrismCode>
+        <SyntaxHighlighter code={CustomFormValidatorJs} />
       </PropInfo>
     </ApiPage>
   );

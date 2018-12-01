@@ -1,11 +1,9 @@
 import * as  React from 'react';
 
-import PrismCode from 'react-prism';
 import { Link } from 'react-router-dom';
 import { Jumbotron } from 'reactstrap';
 
-// import { Form } from 'react-ocean-forms';
-// import { FormButton, Input, OnOffToggleButton, Check, DatePicker } from 'react-ocean-forms-bootstrap';
+import { SyntaxHighlighter } from '../../components/SyntaxHighlighter';
 
 import GettingStartedJs from '!!raw-loader!./examples/GettingStarted.js';
 
@@ -30,14 +28,9 @@ export const Home = (): JSX.Element => {
       <h2>Installation</h2>
 
       <p>with npm:</p>
-      <PrismCode className="lang-bash" component="pre">
-        npm install --save-dev react-ocean-forms
-      </PrismCode>
-
+      <SyntaxHighlighter code="npm install --save-dev react-ocean-forms" language="bash" />
       <p>or with yarn:</p>
-      <PrismCode className="lang-bash" component="pre">
-        yarn add --dev react-ocean-forms
-      </PrismCode>
+      <SyntaxHighlighter code="yarn add --dev react-ocean-forms" language="bash" />
 
       <h4 className="mt-4">Optional packages</h4>
       <p>
@@ -52,12 +45,6 @@ export const Home = (): JSX.Element => {
         for react-intl support.
       </p>
 
-      {/* <Form>
-        <div>
-          <FormButton>Submit</FormButton>
-        </div>
-      </Form> */}
-
       <h2 className="mt-4">Getting started</h2>
       <p>
         Assuming that you already have an up and running React app, otherwise please follow
@@ -66,8 +53,10 @@ export const Home = (): JSX.Element => {
       <p>
         After adding the react-ocean-forms package(s) to your project, you can simply import the components you need.
       </p>
-      <PrismCode className="lang-jsx" component="pre">{GettingStartedJs}</PrismCode>
+      <SyntaxHighlighter code={GettingStartedJs} />
       <p>For further documentation head to the <Link to="/components">components</Link> section.</p>
     </div>
   );
 };
+
+export const AsyncPage = Home;

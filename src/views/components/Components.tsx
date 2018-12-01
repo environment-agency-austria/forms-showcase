@@ -53,3 +53,5 @@ export const Components = (): JSX.Element => {
     </Row>
   );
 };
+
+export const AsyncPage = Components;

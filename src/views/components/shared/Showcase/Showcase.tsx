@@ -1,7 +1,7 @@
 import * as React from 'react';
 
-import PrismCode from 'react-prism';
 import { Button } from 'reactstrap';
+import { SyntaxHighlighter } from '../../../../components/SyntaxHighlighter';
 
 interface IShowcaseProps {
   title: string;
@@ -76,7 +76,7 @@ export class Showcase extends React.Component<IShowcaseProps, IShowcaseState> {
           {showCode ? (
             <React.Fragment>
               <h6><Button color="link" onClick={this.hideCode}>Hide sourcecode</Button></h6>
-              <PrismCode className="lang-jsx" component="pre">{code}</PrismCode>
+              <SyntaxHighlighter code={code} />
             </React.Fragment>
           ) :
             <h6 className="mb-0">

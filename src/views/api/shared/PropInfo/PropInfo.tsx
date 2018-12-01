@@ -1,12 +1,9 @@
 import * as React from 'react';
 
-import PrismCode from 'react-prism';
-
 interface IPropInfoProps {
   name: string;
   required: boolean;
   deprecated: boolean;
-  example?: string;
   // tslint:disable-next-line:no-reserved-keywords
   type?: string;
   defaultValue?: string;
@@ -28,7 +25,6 @@ export class PropInfo extends React.Component<IPropInfoProps> {
       description,
       required,
       deprecated,
-      example,
       children,
     } = this.props;
 
@@ -45,7 +41,6 @@ export class PropInfo extends React.Component<IPropInfoProps> {
         <div className="meta">
           {description ? <p>{description}</p> : ''}
           {children}
-          {example ? <PrismCode className="lang-jsx" component="pre">{example}</PrismCode> : ''}
         </div>
       </div>
     );
