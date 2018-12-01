@@ -8,6 +8,7 @@ import { PropInfo } from '../shared/PropInfo';
 
 import CustomAsyncValidatorJs from '!!raw-loader!./examples/CustomAsyncValidator.js';
 import CustomFormValidatorJs from '!!raw-loader!./examples/CustomFormValidator.js';
+import CustomRequiredValidatorJs from '!!raw-loader!./examples/CustomRequiredValidator.js';
 import CustomValidatorJs from '!!raw-loader!./examples/CustomValidator.js';
 import ErrorMessageJs from '!!raw-loader!./examples/ErrorMessage.js';
 import ErrorObjectJs from '!!raw-loader!./examples/ErrorObject.js';
@@ -179,6 +180,19 @@ export const ValidatorsPage = (): JSX.Element => {
         <h6>Simple example validator</h6>
         <p>Example implementation of an validator that checks if the input is the value 'OK'.</p>
         <PrismCode className="lang-jsx" component="pre">{CustomValidatorJs}</PrismCode>
+      </PropInfo>
+
+      <PropInfo name="Custom required validator">
+        <p>
+          You can write your own required validator. This will make the form mark the validated field as
+          required (by default with a *). To mark your validator function as a required validator, simply
+          flag it with <mark>isDefaultValidator = true</mark>. Currently this is only supported for synchronous
+          validators. See <mark>Custom synchronous validators</mark> for further details.
+        </p>
+
+        <h6>Simple required validator</h6>
+        <p>Example implementation of a required validator.</p>
+        <PrismCode className="lang-jsx" component="pre">{CustomRequiredValidatorJs}</PrismCode>
       </PropInfo>
 
       <PropInfo name="Custom asynchronous validator">
