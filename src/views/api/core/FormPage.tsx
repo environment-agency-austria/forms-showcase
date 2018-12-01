@@ -64,6 +64,10 @@ export const FormPage = (): JSX.Element => {
         If set to true, the form will trigger a form reset after a successful submit.
       </PropInfo>
 
+      <PropInfo name="busy" type="Boolean" defaultValue="false">
+        If set to true, the form will be forced into a busy state. Useful for example to disable the form buttons during data loading.
+      </PropInfo>
+
       <PropInfo name="formatString" type="Function">
         <p>
           If set every text output will be put through this function. Per default an internal
