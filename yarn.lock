@@ -990,9 +990,10 @@
     "@types/history" "*"
     "@types/react" "*"
 
-"@types/react-select@^2.0.8":
-  version "2.0.8"
-  resolved "https://registry.yarnpkg.com/@types/react-select/-/react-select-2.0.8.tgz#657e9582ac305ceb91e8d330417f67a7993f5449"
+"@types/react-select@^2.0.10":
+  version "2.0.10"
+  resolved "https://registry.yarnpkg.com/@types/react-select/-/react-select-2.0.10.tgz#04bfec166e87f24d46c1048af44c1963ea6b82d4"
+  integrity sha512-KpgFYzrPvIEcQys3EBBub02plGgI2CunV4lMN+6+ELr+XGcXPpQ9jC54qTLbXHaHZYzXYlChrVUKdnsaYZx5Gg==
   dependencies:
     "@types/react" "*"
     "@types/react-dom" "*"
@@ -1017,13 +1018,6 @@
   dependencies:
     "@types/prop-types" "*"
     csstype "^2.2.0"
-
-"@types/reactstrap@^6.4.2":
-  version "6.4.2"
-  resolved "https://registry.yarnpkg.com/@types/reactstrap/-/reactstrap-6.4.2.tgz#6164a66f5cb2b453a58b5a2fb542974484d4d665"
-  dependencies:
-    "@types/react" "*"
-    popper.js "^1.14.1"
 
 "@types/reactstrap@^6.4.3":
   version "6.4.3"
@@ -8340,23 +8334,23 @@ react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
 
-react-ocean-forms-bootstrap@^2.1.3:
-  version "2.1.3"
-  resolved "https://registry.yarnpkg.com/react-ocean-forms-bootstrap/-/react-ocean-forms-bootstrap-2.1.3.tgz#8801ea68abec58db887de22d3dd1d1f22c41aadc"
-  integrity sha512-6jBUuVkY6hRfknKfB9v9fk/2NtZ7yLl0Y0fclI8Anf0w/w9fFBWppdnPmPEV+e2kl+49ciXmOlsayrwgMhNAgw==
+react-ocean-forms-bootstrap@^2.1.5:
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/react-ocean-forms-bootstrap/-/react-ocean-forms-bootstrap-2.1.5.tgz#1e88c0dd608c0227a52ec451302c26aba13f85e0"
+  integrity sha512-BFTTq+PDUn5oiyt77yJOp32YiQ0Xjw77P7Cadd3ntbUMJAl1P6JQLxi82lJ4VWt1q/i3zBQ0deVLc76yJswSGQ==
   dependencies:
-    "@types/react-select" "^2.0.8"
-    "@types/reactstrap" "^6.4.2"
+    "@types/react-select" "^2.0.10"
+    "@types/reactstrap" "^6.4.3"
 
-react-ocean-forms-react-intl@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/react-ocean-forms-react-intl/-/react-ocean-forms-react-intl-2.0.2.tgz#f3ae2e06c71cdecf53ff917c75ccbd463fee03b6"
-  integrity sha512-aS36Mx4qjkJh8yAI8y6DPsg6EVQUrWgDUiwuhBrojwC7nFdQiG3hHqCewT2fLzhvNrLQpfl5te+pIA8UzA76Uw==
+react-ocean-forms-react-intl@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/react-ocean-forms-react-intl/-/react-ocean-forms-react-intl-2.0.3.tgz#2adb2463867ab4b6abb8b9eb579bc73f880ec4b0"
+  integrity sha512-8DLHal10YWlBeGGzkMuhFTN6wYkzOKW1qG+uFHqDLtv4w3eU0fdDQZARVD54zRKa9qY/H8rzGX254hTXorKbMQ==
 
-react-ocean-forms@^2.1.3:
-  version "2.1.3"
-  resolved "https://registry.yarnpkg.com/react-ocean-forms/-/react-ocean-forms-2.1.3.tgz#011ccbbc608e634469308915a89b576e08f4cc2a"
-  integrity sha512-RRLF9zBLtIZI8MyJuusU0FeT0dAJKWel8wFUNhmjykQtohYWB8yj/4lpU/q8Q0oVkaZMtJ2U2QzoDfr05ttWKA==
+react-ocean-forms@^2.1.5:
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/react-ocean-forms/-/react-ocean-forms-2.1.5.tgz#1c3d55e49112bb6f53ca6a444c961475fd04dd4a"
+  integrity sha512-iuZAH6lmj2fKIYZYkZmvwv6UTwfWZBnO5HzT46qzCEEmmZYdX7ardxA2vhv8QkdXHzyDU7lJO8uMLsZBt9p81Q==
 
 react-onclickoutside@^6.5.0:
   version "6.7.1"
