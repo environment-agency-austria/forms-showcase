@@ -17,8 +17,7 @@
       "bootstrap/dist/css",
       "react-datetime/css",
       "react-ocean-forms-bootstrap/build",
-      "react-syntax-highlighter/languages/prism",
-      "react-syntax-highlighter/styles/prism"
+      "react-syntax-highlighter/dist",
     ],
     "no-implicit-dependencies": [true, ["!!raw-loader!.", "react-datetime"]],
     "import-name": [true, {"*/examples*/": "*"}]
