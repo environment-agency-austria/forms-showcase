@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{35:function(e,n,t){"use strict";t.r(n);var o=t(1),u=t(559),r=function(){return o.createElement(o.Fragment,null,o.createElement("h1",null,"404 - Not Found"),o.createElement("p",null,"The page you've requested could not be found."),o.createElement(u.a,{to:"/"},"Go to homepage"))},c=r;t.d(n,"NotFound",function(){return r}),t.d(n,"AsyncPage",function(){return c})}}]);
-//# sourceMappingURL=5.9fe60b3c.chunk.js.map
