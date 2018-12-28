@@ -17,7 +17,7 @@
     "react-ocean-forms-bootstrap": "^2.1.5",
     "react-ocean-forms-react-intl": "^2.0.3",
     "react-router-dom": "^4.3.1",
-    "react-select": "2.1.2",
+    "react-select": "2.2.0",
     "react-syntax-highlighter": "^10.1.2",
     "reactstrap": "^6.5.0"
   },
