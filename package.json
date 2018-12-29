@@ -19,7 +19,7 @@
     "react-router-dom": "^4.3.1",
     "react-select": "2.1.2",
     "react-syntax-highlighter": "^10.1.2",
-    "reactstrap": "^6.5.0"
+    "reactstrap": "^7.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
