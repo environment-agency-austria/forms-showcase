@@ -12,7 +12,7 @@
     "react": "^16.6.3",
     "react-datetime": "2.16.3",
     "react-dom": "^16.6.3",
-    "react-intl": "2.7.2",
+    "react-intl": "2.8.0",
     "react-ocean-forms": "^2.1.5",
     "react-ocean-forms-bootstrap": "^2.1.5",
     "react-ocean-forms-react-intl": "^2.0.3",
