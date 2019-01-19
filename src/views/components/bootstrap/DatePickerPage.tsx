@@ -4,8 +4,10 @@ import { ComponentPage } from '../shared/ComponentPage';
 import { Showcase } from '../shared/Showcase';
 
 import simpleDatePickerDemo from './examples/SimpleDatePicker';
+import plaintextDatePickerDemo from './examples/PlaintextDatePicker';
 
 import SimpleDatePickerJs from '!!raw-loader!./examples/SimpleDatePicker.js';
+import PlaintextDatePickerJs from '!!raw-loader!./examples/PlaintextDatePicker.js';
 
 export const DatePickerPage = (): JSX.Element => {
   return (
@@ -17,11 +19,18 @@ export const DatePickerPage = (): JSX.Element => {
       parent="bootstrap"
     >
       <Showcase
-        title="DatePicker"
-        description="Showcase of a simple datepicker"
+        title="react-datetime"
+        description="Showcase of a simple datepicker using react-datetime in the background"
         component={simpleDatePickerDemo}
         code={SimpleDatePickerJs}
       />
+
+      <Showcase
+        title="Plaintext support"
+        description="Support for plaintext mode is provided out of the box."
+        component={plaintextDatePickerDemo}
+        code={PlaintextDatePickerJs}
+      />      
     </ComponentPage>
   );
 };

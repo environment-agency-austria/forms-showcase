@@ -14,22 +14,24 @@ function Example({ logMessage }) {
   };
 
   return (
-    <Form className="demo">
+    <Form className="demo" plaintext>
       <DatePicker
         name="datePicker"
-        label="Sample date picker"
+        label="Date picker"
         onChange={handleChange}
         onBlur={handleBlur}
         dateFormat="DD.MM.YYYY"
+        defaultValue="2019-01-17T00:00:00+01:00"
       />
 
       <DatePicker
         name="timePicker"
-        label="Sample time picker"
+        label="Time picker"
         onChange={handleChange}
         onBlur={handleBlur}
         dateFormat={false}
         timeFormat="HH:mm"
+        defaultValue="2019-01-01T05:06:00+01:00"
       />
     </Form>
   );
