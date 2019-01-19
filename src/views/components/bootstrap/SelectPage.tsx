@@ -4,8 +4,10 @@ import { ComponentPage } from '../shared/ComponentPage';
 import { Showcase } from '../shared/Showcase';
 
 import simpleSelectDemo from './examples/SimpleSelect';
+import plaintextSelectDemo from './examples/PlaintextSelect';
 
 import SimpleSelectJs from '!!raw-loader!./examples/SimpleSelect.js';
+import PlaintextSelectJs from '!!raw-loader!./examples/PlaintextSelect.js';
 
 export const SelectPage = (): JSX.Element => {
   return (
@@ -17,11 +19,18 @@ export const SelectPage = (): JSX.Element => {
       parent="bootstrap"
     >
       <Showcase
-        title="Bootstrap select"
+        title="react-select"
         description="Showcase of the react-select integration"
         component={simpleSelectDemo}
         code={SimpleSelectJs}
       />
+
+      <Showcase
+        title="react-select plaintext mode"
+        description="Support for plaintext mode is provided out of the box."
+        component={plaintextSelectDemo}
+        code={PlaintextSelectJs}
+      />      
     </ComponentPage>
   );
 };
