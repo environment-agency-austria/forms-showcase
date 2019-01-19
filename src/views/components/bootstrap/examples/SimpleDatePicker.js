@@ -28,6 +28,7 @@ function Example({ logMessage }) {
         label="Sample time picker"
         onChange={handleChange}
         onBlur={handleBlur}
+        dateFormat={false}
         timeFormat="HH:mm"
       />
     </Form>
