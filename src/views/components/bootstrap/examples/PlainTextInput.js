@@ -8,6 +8,7 @@ function Example() {
       <Input
         name="myInput"
         label="Normal input"
+        defaultValue="Example text"
         />
 
       <Input
@@ -20,6 +21,7 @@ function Example() {
         name="infoInput"
         label="Info input"
         info="Custom info text!"
+        defaultValue="Lorem ipsum ..."
       />
     </Form>
   );
