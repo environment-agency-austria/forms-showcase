@@ -2,12 +2,6 @@ import * as React from 'react';
 import { HashRouter, Link, Route, Switch } from 'react-router-dom';
 import { Collapse, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
 
-// tslint:disable-next-line:no-import-side-effect
-import 'babel-polyfill';
-
-import 'bootstrap/dist/css/bootstrap.css';
-import 'react-datetime/css/react-datetime.css';
-
 import { asyncComponent } from './components/asyncComponent';
 
 const asyncApi = asyncComponent(() => import('./views/api'));
