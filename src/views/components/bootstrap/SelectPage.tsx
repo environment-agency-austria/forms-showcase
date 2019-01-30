@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 
 import { ComponentPage } from '../shared/ComponentPage';
 import { Showcase } from '../shared/Showcase';
@@ -30,7 +30,7 @@ export const SelectPage = (): JSX.Element => {
         description="Support for plaintext mode is provided out of the box."
         component={plaintextSelectDemo}
         code={PlaintextSelectJs}
-      />      
+      />
     </ComponentPage>
   );
 };

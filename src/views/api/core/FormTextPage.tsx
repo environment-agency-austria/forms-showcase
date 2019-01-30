@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 
 import { ApiPage } from '../shared/ApiPage';
 import { PropInfo } from '../shared/PropInfo';

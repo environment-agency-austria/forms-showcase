@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { HashRouter, Link, Route, Switch } from 'react-router-dom';
 import { Collapse, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
 
