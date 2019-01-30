@@ -1,13 +1,11 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import { HashRouter, Link, Route, Switch } from 'react-router-dom';
 import { Collapse, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
 
-import { asyncComponent } from './components/asyncComponent';
-
-const asyncApi = asyncComponent(() => import('./views/api'));
-const asyncComponents = asyncComponent(() => import('./views/components'));
-const asyncHome = asyncComponent(() => import('./views/home'));
-const asyncNotFound = asyncComponent(() => import('./views/not-found'));
+const Home = lazy(async () => { return { default: (await import('./views/home')).Home }; });
+const Components = lazy(async () => { return { default: (await import('./views/components')).Components }; });
+const Api = lazy(async () => { return { default: (await import('./views/api')).Api }; });
+const NotFound = lazy(async () => { return { default: (await import('./views/not-found')).NotFound }; });
 
 interface IAppState {
   isOpen: boolean;
@@ -52,12 +50,14 @@ export class App extends React.Component<{}, IAppState> {
           </Navbar>
 
           <div className="content container">
+            <Suspense fallback={<div>Loading...</div>}>
               <Switch>
-                <Route path="/" exact component={asyncHome} />
-                <Route path="/components" component={asyncComponents} />
-                <Route path="/api" component={asyncApi} />
-                <Route path="*" component={asyncNotFound} />
+                <Route path="/" exact component={Home} />
+                <Route path="/components" component={Components} />
+                <Route path="/api" component={Api} />
+                <Route path="*" component={NotFound} />
               </Switch>
+            </Suspense>
           </div>
         </div>
       </HashRouter>
