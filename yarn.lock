@@ -959,6 +959,14 @@
     "@types/react" "*"
     popper.js "^1.14.1"
 
+"@types/reactstrap@^7.1.2":
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/@types/reactstrap/-/reactstrap-7.1.2.tgz#78d67e3ffe3159dbd082066bc98ba9103ea49b6f"
+  integrity sha512-zbwUgtbS8Pf9/DHBtPPDdx2iwTP7TWwfrWytHfT/RVT4uXXYGo6ZwXhzPdd4gwY7YpAayjsYLyjjSDbIxT+/yw==
+  dependencies:
+    "@types/react" "*"
+    popper.js "^1.14.1"
+
 "@types/tapable@1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@types/tapable/-/tapable-1.0.2.tgz#e13182e1b69871a422d7863e11a4a6f5b814a4bd"
