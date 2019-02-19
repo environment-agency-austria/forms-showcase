@@ -129,7 +129,8 @@ export const ValidatorsPage = (): JSX.Element => {
       <h2>Validators with parameters</h2>
       <p>
         If a validator needs additional parameters (like <mark>minLength</mark> and <mark>maxLength</mark> do), you
-        can use the helper function <mark>validators.withParam</mark>. Example usage to pass the parameter 5 to the minLength validator:
+        can use the helper functions <mark>validators.withParam</mark> or <mark>validators.withAsyncParam</mark> (for
+        async validators). Example usage to pass the parameter 5 to the minLength validator:
       </p>
       <SyntaxHighlighter code={ValidatorsWithParamsJs} />
 

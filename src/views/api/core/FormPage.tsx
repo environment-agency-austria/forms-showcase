@@ -137,6 +137,13 @@ export const FormPage = (): JSX.Element => {
         <h6>Arguments</h6>
         <p>None.</p>
       </PropInfo>
+
+      <h2>Hooks</h2>
+      <PropInfo name="useFormContext" type="Hook">
+        <p>
+          Returns the current <mark>form context</mark>. Can be used in any component wrapped by a <mark>Form</mark>.
+        </p>
+      </PropInfo>
     </ApiPage>
   );
 };

@@ -76,6 +76,14 @@ export const FieldPage = (): JSX.Element => {
         overwriting its default value but also any value the user put in.
       </PropInfo>
 
+      <PropInfo name="disabled" type="Object" defaultValue="form default">
+        Overwrites the disabled state for this field.
+      </PropInfo>
+
+      <PropInfo name="plaintext" type="Object" defaultValue="form default">
+        Overwrites the plaintext state for this field.
+      </PropInfo>
+
       <PropInfo name="Specialized properties">
         <p>
           Depending on the input component that is used with the Field, the Field will accept a range of specialized properties

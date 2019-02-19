@@ -36,10 +36,42 @@ function Example({ logMessage }) {
         label="Technical contact"
         render={() => {
           return (
-            <React.Fragment>
+            <div className="mt-4">
               <strong>Technical contact</strong>
               <ContactFields />
-            </React.Fragment>
+            </div>
+          );
+        }}
+      />
+
+      <FieldGroup
+        name="disabledContact"
+        label="Disabled contact"
+        disabled
+        render={() => {
+          return (
+            <div className="mt-4">
+              <strong>Disabled contact</strong>
+              <ContactFields />
+            </div>
+          );
+        }}
+      />
+
+      <FieldGroup
+        name="plaintextContact"
+        label="Plaintext contact"
+        plaintext
+        values={{
+          first: 'Foo',
+          last: 'Bar',
+        }}
+        render={() => {
+          return (
+            <div className="mt-4">
+              <strong>Plaintext contact</strong>
+              <ContactFields />
+            </div>
           );
         }}
       />

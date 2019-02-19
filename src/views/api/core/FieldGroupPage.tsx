@@ -89,6 +89,14 @@ export const FieldGroupPage = (): JSX.Element => {
         overwriting their default values but also any value the user put in.
       </PropInfo>
 
+      <PropInfo name="disabled" type="Object" defaultValue="form default">
+        Overwrites the disabled state for this field group.
+      </PropInfo>
+
+      <PropInfo name="plaintext" type="Object" defaultValue="form default">
+        Overwrites the plaintext state for this field group.
+      </PropInfo>
+
       <h2>Events</h2>
       <p>The <mark>FieldGroup</mark> doesn't emit any events.</p>
     </ApiPage>
