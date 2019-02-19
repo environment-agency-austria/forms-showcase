@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, validators } from 'react-ocean-forms';
+import { Form } from 'react-ocean-forms';
 import { Select } from 'react-ocean-forms-bootstrap';
 
 function Example({ logMessage }) {
