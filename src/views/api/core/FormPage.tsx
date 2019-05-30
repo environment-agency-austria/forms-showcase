@@ -21,7 +21,7 @@ export const FormPage = (): JSX.Element => {
       parent="core"
     >
       <h2>Properties</h2>
-      <PropInfo name="asyncValidationOnChange" type="Boolean" defaultValue="false">
+      <PropInfo name="asyncValidateOnChange" type="Boolean" defaultValue="false">
         If set to true the form will trigger asynchronous validation on <Link to="./field">Fields</Link> whenever they
         change (e.g. on key press). Default behaviour is that the fields will only async validate
         when they loose focus. Can be overriden per field.
