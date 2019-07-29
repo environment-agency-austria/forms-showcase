@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "1.2.15",
+    "@fortawesome/fontawesome-svg-core": "1.2.20",
     "@fortawesome/react-fontawesome": "0.1.4",
     "babel-polyfill": "^6.26.0",
     "bootstrap": "^4.3.1",
