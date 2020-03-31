@@ -14,7 +14,7 @@
     "react-dom": "^16.8.2",
     "react-intl": "2.8.0",
     "react-ocean-forms": "^2.2.0",
-    "react-ocean-forms-bootstrap": "^3.0.0",
+    "react-ocean-forms-bootstrap": "^4.0.0",
     "react-ocean-forms-react-intl": "^2.0.3",
     "react-router-dom": "^4.3.1",
     "react-select": "^2.4.1",
